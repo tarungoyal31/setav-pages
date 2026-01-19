@@ -70,7 +70,7 @@ export default function AppBar1Floating() {
             <Container maxWidth="lg">
                 <StyledToolbar variant="dense" disableGutters>
                     <Box sx={{flexGrow: 1, display: 'flex', alignItems: 'center', px: 0}}>
-                        <img src={"/src/assets/logo192.png"} width='32px' height='32px' alt={"Setav logo"}/>
+                        <img src={"/logo192.png"} width='32px' height='32px' alt={"Setav logo"}/>
                         <Box sx={{display: {xs: 'none', md: 'flex'}}}>
                             <Button variant="text" color="info" size="small" onClick={() => handleNavClick('features')}>
                                 Features

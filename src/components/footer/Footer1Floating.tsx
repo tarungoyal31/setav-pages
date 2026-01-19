@@ -50,7 +50,7 @@ export default function Footer1Floating() {
                     }}
                 >
                     <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-                        <img src={"/src/assets/logo192.png"} width='48px' height='48px' alt={"Setav logo"}/>
+                        <img src={"/logo192.png"} width='48px' height='48px' alt={"Setav logo"}/>
                         <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
                             Download the App
                         </Typography>
