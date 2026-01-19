@@ -3,7 +3,7 @@ import Container from '@mui/material/Container';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/material/styles';
-import illustration from '../../assets/illustration.png';
+import illustration from '../../assets/illustration.jpg';
 
 const StyledBox = styled('div')(({ theme }) => ({
     alignSelf: 'center',
