@@ -10,8 +10,8 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-// @ts-expect-error Svg import
-import FitNGlowLogo from '/src/assets/fit_n_glow_logo.svg?react';
+// _@ts-expect-error Svg import // Remove underscore if you want to use svg
+// import SetavLogo from '/src/assets/fit_n_glow_logo.svg?react';
 
 function Copyright() {
     return (
@@ -55,7 +55,7 @@ export default function Footer1Floating() {
                     }}
                 >
                     <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-                        <FitNGlowLogo width='48px' height='48px' />
+                        <img src={"assets/logo192.png"} width='48px' height='48px' alt={"Setav logo"}/>
                         <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
                             Join the newsletter
                         </Typography>
