@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
+import { useState } from 'react';
 
 const userTestimonials = [
   {
@@ -46,6 +47,15 @@ const userTestimonials = [
 ];
 
 export default function Testimonials1Floating() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
+    const scrollLeft = event.currentTarget.scrollLeft;
+    const clientWidth = event.currentTarget.clientWidth;
+    const index = Math.round(scrollLeft / clientWidth);
+    setActiveIndex(index);
+  };
+
   return (
     <Container
       id="testimonials"
@@ -78,9 +88,30 @@ export default function Testimonials1Floating() {
           Join thousands of users who have transformed their networking experience.
         </Typography>
       </Box>
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+        onScroll={handleScroll}
+        sx={{
+          flexWrap: { xs: 'nowrap', sm: 'wrap' },
+          overflowX: { xs: 'auto', sm: 'visible' },
+          width: '100%',
+          scrollSnapType: { xs: 'x mandatory', sm: 'none' },
+          pb: { xs: 2, sm: 0 },
+          '::-webkit-scrollbar': { display: 'none' },
+        }}
+      >
         {userTestimonials.map((testimonial, index) => (
-          <Grid size={{ xs: 12, sm: 6, md: 4 }} key={index} sx={{ display: 'flex' }}>
+          <Grid
+            size={{ xs: 12, sm: 6, md: 4 }}
+            key={index}
+            sx={{
+              display: 'flex',
+              minWidth: { xs: '300px', sm: 'auto' },
+              flexShrink: { xs: 0, sm: 1 },
+              scrollSnapAlign: 'center',
+            }}
+          >
             <Card
               variant="outlined"
               sx={{
@@ -112,6 +143,27 @@ export default function Testimonials1Floating() {
           </Grid>
         ))}
       </Grid>
+      <Box
+        sx={{
+          display: { xs: 'flex', sm: 'none' },
+          justifyContent: 'center',
+          gap: 1,
+          mt: 2,
+        }}
+      >
+        {userTestimonials.map((_, index) => (
+          <Box
+            key={index}
+            sx={{
+              width: 8,
+              height: 8,
+              borderRadius: '50%',
+              bgcolor: index === activeIndex ? 'primary.main' : 'grey.300',
+              transition: 'background-color 0.3s',
+            }}
+          />
+        ))}
+      </Box>
     </Container>
   );
 }
