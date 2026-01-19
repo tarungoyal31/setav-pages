@@ -2,10 +2,8 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import IconButton from '@mui/material/IconButton';
-import InputLabel from '@mui/material/InputLabel';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
@@ -54,36 +52,55 @@ export default function Footer1Floating() {
                     <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
                         <img src={"/src/assets/logo192.png"} width='48px' height='48px' alt={"Setav logo"}/>
                         <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
-                            Join the newsletter
+                            Download the App
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2 }}>
-                            Subscribe for weekly updates. No spams ever!
+                            Get Setav on your mobile device and start connecting today.
                         </Typography>
-                        <InputLabel htmlFor="email-newsletter">Email</InputLabel>
-                        <Stack direction="row" spacing={1} useFlexGap>
-                            <TextField
-                                id="email-newsletter"
-                                hiddenLabel
-                                size="small"
-                                variant="outlined"
-                                fullWidth
-                                aria-label="Enter your email address"
-                                placeholder="Your email address"
-                                slotProps={{
-                                    htmlInput: {
-                                        autoComplete: 'off',
-                                        'aria-label': 'Enter your email address',
-                                    },
-                                }}
-                                sx={{ width: '250px' }}
-                            />
+                        <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1.5} useFlexGap>
                             <Button
                                 variant="contained"
                                 color="primary"
-                                size="small"
-                                sx={{ flexShrink: 0 }}
+                                href="https://apps.apple.com/in/app/setav/id6738992536"
+                                target="_blank"
+                                rel="noopener"
+                                startIcon={<AppleIcon />}
+                                sx={{
+                                    textTransform: 'none',
+                                    px: 2,
+                                    py: 1,
+                                }}
                             >
-                                Subscribe
+                                <Box sx={{ textAlign: 'left' }}>
+                                    <Typography variant="caption" sx={{ display: 'block', lineHeight: 1, fontSize: '0.65rem' }}>
+                                        Download on the
+                                    </Typography>
+                                    <Typography variant="body2" sx={{ fontWeight: 600, lineHeight: 1.2 }}>
+                                        App Store
+                                    </Typography>
+                                </Box>
+                            </Button>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                href="https://play.google.com/store/apps/details?id=ai.setav.customer"
+                                target="_blank"
+                                rel="noopener"
+                                startIcon={<AndroidIcon />}
+                                sx={{
+                                    textTransform: 'none',
+                                    px: 2,
+                                    py: 1,
+                                }}
+                            >
+                                <Box sx={{ textAlign: 'left' }}>
+                                    <Typography variant="caption" sx={{ display: 'block', lineHeight: 1, fontSize: '0.65rem' }}>
+                                        Get it on
+                                    </Typography>
+                                    <Typography variant="body2" sx={{ fontWeight: 600, lineHeight: 1.2 }}>
+                                        Google Play
+                                    </Typography>
+                                </Box>
                             </Button>
                         </Stack>
                     </Box>
@@ -198,33 +215,6 @@ export default function Footer1Floating() {
                     >
                         <AndroidIcon />
                     </IconButton>
-                    {/*<IconButton*/}
-                    {/*    color="inherit"*/}
-                    {/*    size="small"*/}
-                    {/*    href="https://instagram.com/setav.ai"*/}
-                    {/*    aria-label="Instagram"*/}
-                    {/*    sx={{ alignSelf: 'center' }}*/}
-                    {/*>*/}
-                    {/*    <InstagramIcon />*/}
-                    {/*</IconButton>*/}
-                    {/*<IconButton*/}
-                    {/*    color="inherit"*/}
-                    {/*    size="small"*/}
-                    {/*    href="https://x.com/setav_ai"*/}
-                    {/*    aria-label="X"*/}
-                    {/*    sx={{ alignSelf: 'center' }}*/}
-                    {/*>*/}
-                    {/*    <TwitterIcon />*/}
-                    {/*</IconButton>*/}
-                    {/*<IconButton*/}
-                    {/*    color="inherit"*/}
-                    {/*    size="small"*/}
-                    {/*    href="https://linkedin.com/company/setav"*/}
-                    {/*    aria-label="LinkedIn"*/}
-                    {/*    sx={{ alignSelf: 'center' }}*/}
-                    {/*>*/}
-                    {/*    <LinkedInIcon />*/}
-                    {/*</IconButton>*/}
                 </Stack>
             </Box>
         </Container>
