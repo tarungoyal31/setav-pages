@@ -11,6 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+import { useNavigate, useLocation } from 'react-router-dom';
 // import {SvgIconProps} from "@mui/material";
 // _@ts-expect-error Svg import // Remove underscore if you want to use svg
 // import FitNGlowLogo from '/src/assets/fit_n_glow_logo.svg?react';
@@ -46,13 +47,21 @@ const scrollToSection = (sectionId: string) => {
 
 export default function AppBar1Floating() {
     const [open, setOpen] = React.useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const toggleDrawer = (newOpen: boolean) => () => {
         setOpen(newOpen);
     };
 
     const handleNavClick = (sectionId: string) => {
-        scrollToSection(sectionId);
+        if (location.pathname !== '/') {
+             navigate('/#' + sectionId);
+             // Allow time for navigation then scroll if possible, or rely on browser
+             setTimeout(() => scrollToSection(sectionId), 100);
+        } else {
+            scrollToSection(sectionId);
+        }
         setOpen(false);
     };
 
@@ -70,7 +79,9 @@ export default function AppBar1Floating() {
             <Container maxWidth="lg">
                 <StyledToolbar variant="dense" disableGutters>
                     <Box sx={{flexGrow: 1, display: 'flex', alignItems: 'center', px: 0}}>
-                        <img src={"/logo192.png"} width='32px' height='32px' alt={"Setav logo"}/>
+                        <Box onClick={() => navigate('/')} sx={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}>
+                            <img src={"/logo192.png"} width='32px' height='32px' alt={"Setav logo"}/>
+                        </Box>
                         <Box sx={{display: {xs: 'none', md: 'flex'}}}>
                             <Button variant="text" color="info" size="small" onClick={() => handleNavClick('features')}>
                                 Features

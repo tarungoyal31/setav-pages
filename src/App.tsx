@@ -1,25 +1,17 @@
-import Box from "@mui/material/Box";
-import AppBar1Floating from "./components/appbar/AppBar1Floating.tsx";
-import Hero1Floating from "./components/hero/Hero1Floating.tsx";
-import Features1Floating from "./components/features/Features1Floating.tsx";
-import Testimonials1Floating from "./components/testimonials/Testimonials1Floating.tsx";
-import Highlights1Floating from "./components/highlights/Highlights1Floating.tsx";
-import Pricing1Floating from "./components/pricing/Pricing1Floating.tsx";
-import Footer1Floating from "./components/footer/Footer1Floating.tsx";
-import Faq1Floating from "./components/faq/Faq1Floating.tsx";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import Terms from "./pages/Terms.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
+import CSAE from "./pages/CSAE.tsx";
 
 function App() {
     return (
-        <Box>
-            <AppBar1Floating/>
-            <Hero1Floating/>
-            <Features1Floating/>
-            <Testimonials1Floating/>
-            <Highlights1Floating/>
-            <Pricing1Floating/>
-            <Faq1Floating/>
-            <Footer1Floating/>
-        </Box>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/csae" element={<CSAE />} />
+        </Routes>
     );
 }
 

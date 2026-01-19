@@ -115,19 +115,19 @@ export default function Footer1Floating() {
                     <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
                         Product
                     </Typography>
-                    <Link color="text.secondary" variant="body2" href="#features">
+                    <Link color="text.secondary" variant="body2" href="/#features">
                         Features
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#testimonials">
+                    <Link color="text.secondary" variant="body2" href="/#testimonials">
                         Testimonials
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#highlights">
+                    <Link color="text.secondary" variant="body2" href="/#highlights">
                         Highlights
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#pricing">
+                    <Link color="text.secondary" variant="body2" href="/#pricing">
                         Pricing
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#faq">
+                    <Link color="text.secondary" variant="body2" href="/#faq">
                         FAQs
                     </Link>
                 </Box>
@@ -180,14 +180,20 @@ export default function Footer1Floating() {
                 }}
             >
                 <div>
-                    <Link color="text.secondary" variant="body2" href="#">
+                    <Link color="text.secondary" variant="body2" href="/privacy-policy">
                         Privacy Policy
                     </Link>
                     <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
                         &nbsp;•&nbsp;
                     </Typography>
-                    <Link color="text.secondary" variant="body2" href="#">
+                    <Link color="text.secondary" variant="body2" href="/terms">
                         Terms of Service
+                    </Link>
+                    <Typography sx={{ display: 'inline', mx: 0.5, opacity: 0.5 }}>
+                        &nbsp;•&nbsp;
+                    </Typography>
+                    <Link color="text.secondary" variant="body2" href="/csae">
+                        CSAE
                     </Link>
                     <Copyright />
                 </div>
