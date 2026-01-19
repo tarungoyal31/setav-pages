@@ -40,11 +40,20 @@ const StyledToolbar = styled(Toolbar)(({theme}) => ({
 //     );
 // }
 
+const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({behavior: 'smooth'});
+};
+
 export default function AppBar1Floating() {
     const [open, setOpen] = React.useState(false);
 
     const toggleDrawer = (newOpen: boolean) => () => {
         setOpen(newOpen);
+    };
+
+    const handleNavClick = (sectionId: string) => {
+        scrollToSection(sectionId);
+        setOpen(false);
     };
 
     return (
@@ -61,26 +70,22 @@ export default function AppBar1Floating() {
             <Container maxWidth="lg">
                 <StyledToolbar variant="dense" disableGutters>
                     <Box sx={{flexGrow: 1, display: 'flex', alignItems: 'center', px: 0}}>
-                        {/*<LogoIcon/>*/}
                         <img src={"/src/assets/logo192.png"} width='32px' height='32px' alt={"Setav logo"}/>
                         <Box sx={{display: {xs: 'none', md: 'flex'}}}>
-                            <Button variant="text" color="info" size="small">
+                            <Button variant="text" color="info" size="small" onClick={() => handleNavClick('features')}>
                                 Features
                             </Button>
-                            <Button variant="text" color="info" size="small">
+                            <Button variant="text" color="info" size="small" onClick={() => handleNavClick('testimonials')}>
                                 Testimonials
                             </Button>
-                            <Button variant="text" color="info" size="small">
+                            <Button variant="text" color="info" size="small" onClick={() => handleNavClick('highlights')}>
                                 Highlights
                             </Button>
-                            <Button variant="text" color="info" size="small">
+                            <Button variant="text" color="info" size="small" onClick={() => handleNavClick('pricing')}>
                                 Pricing
                             </Button>
-                            <Button variant="text" color="info" size="small" sx={{minWidth: 0}}>
+                            <Button variant="text" color="info" size="small" sx={{minWidth: 0}} onClick={() => handleNavClick('faq')}>
                                 FAQ
-                            </Button>
-                            <Button variant="text" color="info" size="small" sx={{minWidth: 0}}>
-                                Blog
                             </Button>
                         </Box>
                     </Box>
@@ -91,10 +96,10 @@ export default function AppBar1Floating() {
                             alignItems: 'center',
                         }}
                     >
-                        <Button color="primary" variant="text" size="small">
+                        <Button color="primary" variant="text" size="small" href="https://app.setav.ai">
                             Sign in
                         </Button>
-                        <Button color="primary" variant="contained" size="small">
+                        <Button color="primary" variant="contained" size="small" href="https://app.setav.ai">
                             Sign up
                         </Button>
                     </Box>
@@ -124,20 +129,19 @@ export default function AppBar1Floating() {
                                     </IconButton>
                                 </Box>
 
-                                <MenuItem>Features</MenuItem>
-                                <MenuItem>Testimonials</MenuItem>
-                                <MenuItem>Highlights</MenuItem>
-                                <MenuItem>Pricing</MenuItem>
-                                <MenuItem>FAQ</MenuItem>
-                                <MenuItem>Blog</MenuItem>
+                                <MenuItem onClick={() => handleNavClick('features')}>Features</MenuItem>
+                                <MenuItem onClick={() => handleNavClick('testimonials')}>Testimonials</MenuItem>
+                                <MenuItem onClick={() => handleNavClick('highlights')}>Highlights</MenuItem>
+                                <MenuItem onClick={() => handleNavClick('pricing')}>Pricing</MenuItem>
+                                <MenuItem onClick={() => handleNavClick('faq')}>FAQ</MenuItem>
                                 <Divider sx={{my: 3}}/>
                                 <MenuItem>
-                                    <Button color="primary" variant="contained" fullWidth>
+                                    <Button color="primary" variant="contained" fullWidth href="https://app.setav.ai">
                                         Sign up
                                     </Button>
                                 </MenuItem>
                                 <MenuItem>
-                                    <Button color="primary" variant="outlined" fullWidth>
+                                    <Button color="primary" variant="outlined" fullWidth href="https://app.setav.ai">
                                         Sign in
                                     </Button>
                                 </MenuItem>

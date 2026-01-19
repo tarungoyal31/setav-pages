@@ -4,49 +4,49 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import AutoFixHighRoundedIcon from '@mui/icons-material/AutoFixHighRounded';
-import ConstructionRoundedIcon from '@mui/icons-material/ConstructionRounded';
-import QueryStatsRoundedIcon from '@mui/icons-material/QueryStatsRounded';
-import SettingsSuggestRoundedIcon from '@mui/icons-material/SettingsSuggestRounded';
-import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
-import ThumbUpAltRoundedIcon from '@mui/icons-material/ThumbUpAltRounded';
+import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
+import LockRoundedIcon from '@mui/icons-material/LockRounded';
+import ExploreRoundedIcon from '@mui/icons-material/ExploreRounded';
+import EventAvailableRoundedIcon from '@mui/icons-material/EventAvailableRounded';
+import VerifiedUserRoundedIcon from '@mui/icons-material/VerifiedUserRounded';
+import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
 
 const items = [
     {
-        icon: <SettingsSuggestRoundedIcon />,
-        title: 'Adaptable performance',
+        icon: <PeopleAltRoundedIcon />,
+        title: 'Two-Way Connection',
         description:
-            'Our product effortlessly adjusts to your needs, boosting efficiency and simplifying your tasks.',
+            'Designed for both individuals and businesses. Personal cards for networking, business cards for selling services.',
     },
     {
-        icon: <ConstructionRoundedIcon />,
-        title: 'Built to last',
+        icon: <LockRoundedIcon />,
+        title: 'Privacy First',
         description:
-            'Experience unmatched durability that goes above and beyond with lasting investment.',
+            'Personal cards stay private with one-time links. Share your information only with people you choose.',
     },
     {
-        icon: <ThumbUpAltRoundedIcon />,
-        title: 'Great user experience',
+        icon: <ExploreRoundedIcon />,
+        title: 'Easy Discovery',
         description:
-            'Integrate our product into your routine with an intuitive and easy-to-use interface.',
+            'Business cards are public and discoverable. Let potential customers find your services on the platform.',
     },
     {
-        icon: <AutoFixHighRoundedIcon />,
-        title: 'Innovative functionality',
+        icon: <EventAvailableRoundedIcon />,
+        title: 'Instant Booking',
         description:
-            'Stay ahead with features that set new standards, addressing your evolving needs better than the rest.',
+            'Integrated calendar system with automatic invites. Customers book, both parties get notified instantly.',
     },
     {
-        icon: <SupportAgentRoundedIcon />,
-        title: 'Reliable support',
+        icon: <VerifiedUserRoundedIcon />,
+        title: 'Secure Transactions',
         description:
-            'Count on our responsive customer support, offering assistance that goes beyond the purchase.',
+            'Accept payments safely through the platform. Secure payment processing for peace of mind.',
     },
     {
-        icon: <QueryStatsRoundedIcon />,
-        title: 'Precision in every detail',
+        icon: <DevicesRoundedIcon />,
+        title: 'Cross-Platform',
         description:
-            'Enjoy a meticulously crafted product where small touches make a significant impact on your overall experience.',
+            'Available on iOS, Android, and web. Access your cards and manage bookings from anywhere.',
     },
 ];
 
@@ -77,12 +77,12 @@ export default function Highlights1Floating() {
                     }}
                 >
                     <Typography component="h2" variant="h4" gutterBottom>
-                        Highlights
+                        Why Choose Setav
                     </Typography>
                     <Typography variant="body1" sx={{ color: 'grey.400' }}>
-                        Explore why our product stands out: adaptability, durability,
-                        user-friendly design, and innovation. Enjoy reliable customer support and
-                        precision in every detail.
+                        Setav provides a complete platform for digital networking. Whether you're
+                        an individual looking to share contacts or a business selling services,
+                        we have you covered.
                     </Typography>
                 </Box>
                 <Grid container spacing={2}>

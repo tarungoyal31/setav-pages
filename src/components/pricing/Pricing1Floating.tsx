@@ -13,46 +13,49 @@ import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
 
 const tiers = [
     {
-        title: 'Free',
-        price: '0',
+        title: 'Basic',
+        price: 'Free',
         description: [
-            '10 users included',
-            '2 GB of storage',
-            'Help center access',
+            'Personal digital card',
+            'QR code generation',
+            'One-time links for private sharing',
             'Email support',
         ],
-        buttonText: 'Sign up for free',
+        buttonText: 'Get Started Free',
         buttonVariant: 'outlined',
         buttonColor: 'primary',
+        buttonLink: 'https://app.setav.ai',
     },
     {
-        title: 'Professional',
-        subheader: 'Recommended',
-        price: '15',
+        title: 'Plus',
+        subheader: 'Free for 6 months',
+        price: '499',
         description: [
-            '20 users included',
-            '10 GB of storage',
-            'Help center access',
-            'Priority email support',
-            'Dedicated team',
-            'Best deals',
+            'All Basic features',
+            'Business digital card',
+            'Service catalog with pricing',
+            'Booking system with calendar invites',
+            'Public profile discovery',
+            'Priority support',
         ],
-        buttonText: 'Start now',
+        buttonText: 'Start Free Trial',
         buttonVariant: 'contained',
         buttonColor: 'secondary',
+        buttonLink: 'https://app.setav.ai',
     },
     {
-        title: 'Enterprise',
-        price: '30',
+        title: 'Pro',
+        price: '1999',
         description: [
-            '50 users included',
-            '30 GB of storage',
-            'Help center access',
-            'Phone & email support',
+            'All Plus features',
+            'Secure payment processing',
+            'Managed webpage by Setav team',
+            'Dedicated account manager',
         ],
-        buttonText: 'Contact us',
+        buttonText: 'Contact Sales',
         buttonVariant: 'outlined',
         buttonColor: 'primary',
+        buttonLink: 'mailto:support@setav.ai',
     },
 ];
 
@@ -85,10 +88,8 @@ export default function Pricing1Floating() {
                     Pricing
                 </Typography>
                 <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-                    Quickly build an effective pricing table for your potential customers with
-                    this layout. <br />
-                    It&apos;s built with default Material UI components with little
-                    customization.
+                    Choose the plan that fits your needs. Start free with a personal card,
+                    or unlock business features with Plus and Pro plans.
                 </Typography>
             </Box>
             <Grid
@@ -98,7 +99,7 @@ export default function Pricing1Floating() {
             >
                 {tiers.map((tier) => (
                     <Grid
-                        size={{ xs: 12, sm: tier.title === 'Enterprise' ? 12 : 6, md: 4 }}
+                        size={{ xs: 12, sm: tier.title === 'Pro' ? 12 : 6, md: 4 }}
                         key={tier.title}
                     >
                         <Card
@@ -109,7 +110,7 @@ export default function Pricing1Floating() {
                                     flexDirection: 'column',
                                     gap: 4,
                                 },
-                                tier.title === 'Professional' &&
+                                tier.title === 'Plus' &&
                                 ((theme) => ({
                                     border: 'none',
                                     background:
@@ -133,7 +134,7 @@ export default function Pricing1Floating() {
                                             alignItems: 'center',
                                             gap: 2,
                                         },
-                                        tier.title === 'Professional'
+                                        tier.title === 'Plus'
                                             ? { color: 'grey.100' }
                                             : { color: '' },
                                     ]}
@@ -141,7 +142,7 @@ export default function Pricing1Floating() {
                                     <Typography component="h3" variant="h6">
                                         {tier.title}
                                     </Typography>
-                                    {tier.title === 'Professional' && (
+                                    {tier.title === 'Plus' && (
                                         <Chip icon={<AutoAwesomeIcon />} label={tier.subheader} />
                                     )}
                                 </Box>
@@ -151,17 +152,19 @@ export default function Pricing1Floating() {
                                             display: 'flex',
                                             alignItems: 'baseline',
                                         },
-                                        tier.title === 'Professional'
+                                        tier.title === 'Plus'
                                             ? { color: 'grey.50' }
                                             : { color: null },
                                     ]}
                                 >
                                     <Typography component="h3" variant="h2">
-                                        ${tier.price}
+                                        {tier.price === 'Free' ? 'Free' : `₹${tier.price}`}
                                     </Typography>
-                                    <Typography component="h3" variant="h6">
-                                        &nbsp; per month
-                                    </Typography>
+                                    {tier.price !== 'Free' && (
+                                        <Typography component="h3" variant="h6">
+                                            &nbsp; per month
+                                        </Typography>
+                                    )}
                                 </Box>
                                 <Divider sx={{ my: 2, opacity: 0.8, borderColor: 'divider' }} />
                                 {tier.description.map((line) => (
@@ -174,7 +177,7 @@ export default function Pricing1Floating() {
                                                 {
                                                     width: 20,
                                                 },
-                                                tier.title === 'Professional'
+                                                tier.title === 'Plus'
                                                     ? { color: 'primary.light' }
                                                     : { color: 'primary.main' },
                                             ]}
@@ -183,7 +186,7 @@ export default function Pricing1Floating() {
                                             variant="subtitle2"
                                             component={'span'}
                                             sx={[
-                                                tier.title === 'Professional'
+                                                tier.title === 'Plus'
                                                     ? { color: 'grey.50' }
                                                     : { color: null },
                                             ]}
@@ -198,6 +201,7 @@ export default function Pricing1Floating() {
                                     fullWidth
                                     variant={tier.buttonVariant as 'outlined' | 'contained'}
                                     color={tier.buttonColor as 'primary' | 'secondary'}
+                                    href={tier.buttonLink}
                                 >
                                     {tier.buttonText}
                                 </Button>

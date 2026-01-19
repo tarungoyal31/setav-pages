@@ -7,18 +7,15 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/X';
-// _@ts-expect-error Svg import // Remove underscore if you want to use svg
-// import SetavLogo from '/src/assets/fit_n_glow_logo.svg?react';
+import AppleIcon from '@mui/icons-material/Apple';
+import AndroidIcon from '@mui/icons-material/Android';
 
 function Copyright() {
     return (
         <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
             {'Copyright © '}
-            <Link color="text.secondary" href="https://mui.com/">
-                Sitemark
+            <Link color="text.secondary" href="https://setav.ai">
+                Setav
             </Link>
             &nbsp;
             {new Date().getFullYear()}
@@ -55,7 +52,7 @@ export default function Footer1Floating() {
                     }}
                 >
                     <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-                        <img src={"assets/logo192.png"} width='48px' height='48px' alt={"Setav logo"}/>
+                        <img src={"/src/assets/logo192.png"} width='48px' height='48px' alt={"Setav logo"}/>
                         <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
                             Join the newsletter
                         </Typography>
@@ -101,19 +98,19 @@ export default function Footer1Floating() {
                     <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
                         Product
                     </Typography>
-                    <Link color="text.secondary" variant="body2" href="#">
+                    <Link color="text.secondary" variant="body2" href="#features">
                         Features
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
+                    <Link color="text.secondary" variant="body2" href="#testimonials">
                         Testimonials
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
+                    <Link color="text.secondary" variant="body2" href="#highlights">
                         Highlights
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
+                    <Link color="text.secondary" variant="body2" href="#pricing">
                         Pricing
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
+                    <Link color="text.secondary" variant="body2" href="#faq">
                         FAQs
                     </Link>
                 </Box>
@@ -125,16 +122,16 @@ export default function Footer1Floating() {
                     }}
                 >
                     <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-                        Company
+                        Download
                     </Typography>
-                    <Link color="text.secondary" variant="body2" href="#">
-                        About us
+                    <Link color="text.secondary" variant="body2" href="https://apps.apple.com/in/app/setav/id6738992536" target="_blank" rel="noopener">
+                        iOS App
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
-                        Careers
+                    <Link color="text.secondary" variant="body2" href="https://play.google.com/store/apps/details?id=ai.setav.customer" target="_blank" rel="noopener">
+                        Android App
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
-                        Press
+                    <Link color="text.secondary" variant="body2" href="https://app.setav.ai" target="_blank" rel="noopener">
+                        Web App
                     </Link>
                 </Box>
                 <Box
@@ -145,16 +142,13 @@ export default function Footer1Floating() {
                     }}
                 >
                     <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-                        Legal
-                    </Typography>
-                    <Link color="text.secondary" variant="body2" href="#">
-                        Terms
-                    </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
-                        Privacy
-                    </Link>
-                    <Link color="text.secondary" variant="body2" href="#">
                         Contact
+                    </Typography>
+                    <Link color="text.secondary" variant="body2" href="mailto:support@setav.ai">
+                        support@setav.ai
+                    </Link>
+                    <Link color="text.secondary" variant="body2" href="tel:+918826668006">
+                        +91 8826668006
                     </Link>
                 </Box>
             </Box>
@@ -189,30 +183,48 @@ export default function Footer1Floating() {
                     <IconButton
                         color="inherit"
                         size="small"
-                        href="https://github.com/mui"
-                        aria-label="GitHub"
+                        href="https://apps.apple.com/in/app/setav/id6738992536"
+                        aria-label="iOS App"
                         sx={{ alignSelf: 'center' }}
                     >
-                        <GitHubIcon />
+                        <AppleIcon />
                     </IconButton>
                     <IconButton
                         color="inherit"
                         size="small"
-                        href="https://x.com/MaterialUI"
-                        aria-label="X"
+                        href="https://play.google.com/store/apps/details?id=ai.setav.customer"
+                        aria-label="Android App"
                         sx={{ alignSelf: 'center' }}
                     >
-                        <TwitterIcon />
+                        <AndroidIcon />
                     </IconButton>
-                    <IconButton
-                        color="inherit"
-                        size="small"
-                        href="https://www.linkedin.com/company/mui/"
-                        aria-label="LinkedIn"
-                        sx={{ alignSelf: 'center' }}
-                    >
-                        <LinkedInIcon />
-                    </IconButton>
+                    {/*<IconButton*/}
+                    {/*    color="inherit"*/}
+                    {/*    size="small"*/}
+                    {/*    href="https://instagram.com/setav.ai"*/}
+                    {/*    aria-label="Instagram"*/}
+                    {/*    sx={{ alignSelf: 'center' }}*/}
+                    {/*>*/}
+                    {/*    <InstagramIcon />*/}
+                    {/*</IconButton>*/}
+                    {/*<IconButton*/}
+                    {/*    color="inherit"*/}
+                    {/*    size="small"*/}
+                    {/*    href="https://x.com/setav_ai"*/}
+                    {/*    aria-label="X"*/}
+                    {/*    sx={{ alignSelf: 'center' }}*/}
+                    {/*>*/}
+                    {/*    <TwitterIcon />*/}
+                    {/*</IconButton>*/}
+                    {/*<IconButton*/}
+                    {/*    color="inherit"*/}
+                    {/*    size="small"*/}
+                    {/*    href="https://linkedin.com/company/setav"*/}
+                    {/*    aria-label="LinkedIn"*/}
+                    {/*    sx={{ alignSelf: 'center' }}*/}
+                    {/*>*/}
+                    {/*    <LinkedInIcon />*/}
+                    {/*</IconButton>*/}
                 </Stack>
             </Box>
         </Container>
