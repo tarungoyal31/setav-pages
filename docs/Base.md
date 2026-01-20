@@ -40,3 +40,7 @@ This is a website for a service provider. Service provider details are added in 
   - Download setav app
     - App store
     - Play store
+
+# Notes
+- Create / use placeholder favicon for the website.
+- Crate banner image placeholder to be generated later.
