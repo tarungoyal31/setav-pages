@@ -4,7 +4,7 @@
       "id": "1",
       "group_id": "2",
       "name": "1 month plan",
-      "description": "Plan includes: 2 Charts will be provided along with blood work report check up by the doctor. Home remedies for tropical skin care and tips on Cooking methodology",
+      "description": "The plan includes two personalized charts, a doctor-reviewed blood work check-up, natural home remedies for tropical skin care, and tips on healthy cooking methods.",
       "additional_information": "Lose upto 4 kgs in a month",
       "appointment_type": 1,
       "duration_in_sec": 1800,
@@ -16,7 +16,25 @@
         "display_string": "₹ 4001.0"
       },
       "created_at": 1768280182,
-      "updated_at": 1768281554
+      "updated_at": 1769053257
+    },
+    {
+      "id": "2",
+      "group_id": "2",
+      "name": "3 months plan",
+      "description": "The plan includes two personalized charts, a doctor-reviewed blood work check-up, natural home remedies for tropical skin care, and tips on healthy cooking methods.",
+      "additional_information": "Lose upto 7-9 kgs",
+      "appointment_type": 1,
+      "duration_in_sec": 1800,
+      "is_active": true,
+      "price": {
+        "currency": "INR",
+        "units": 10400,
+        "sub_units": 0,
+        "display_string": "₹ 10400.0"
+      },
+      "created_at": 1769053409,
+      "updated_at": 1769053409
     }
   ]
 }

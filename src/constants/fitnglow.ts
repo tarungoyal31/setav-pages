@@ -99,18 +99,37 @@ export const SERVICES = [
     },
 ];
 
-export const PRICING = {
-    title: "1 Month Nutrition Plan",
-    price: "4,001",
-    currency: "INR",
-    features: [
-        "2 Personalized Diet Charts",
-        "Blood Work Analysis",
-        "Home Remedies Guide",
-        "Cooking Tips & Recipes",
-    ],
-    highlight: "Lose up to 4 kgs in a month",
-};
+export const PRICING_PLANS = [
+    {
+        id: "1",
+        title: "1 Month Plan",
+        price: "4,001",
+        currency: "INR",
+        features: [
+            "2 Personalized Diet Charts",
+            "Doctor-reviewed Blood Work Check-up",
+            "Natural Home Remedies for Skin Care",
+            "Healthy Cooking Tips",
+        ],
+        highlight: "Lose up to 4 kgs in a month",
+        url: "https://app.setav.ai/#/g/2/services/details/1",
+    },
+    {
+        id: "2",
+        title: "3 Months Plan",
+        price: "10,400",
+        currency: "INR",
+        features: [
+            "2 Personalized Diet Charts",
+            "Doctor-reviewed Blood Work Check-up",
+            "Natural Home Remedies for Skin Care",
+            "Healthy Cooking Tips",
+        ],
+        highlight: "Lose up to 7-9 kgs",
+        url: "https://app.setav.ai/#/g/2/services/details/2",
+        popular: true,
+    },
+];
 
 export const VCARD_DATA = {
     name: "Shreya Suman",
