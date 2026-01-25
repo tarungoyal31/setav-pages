@@ -38,5 +38,5 @@ This is a website for a service provider. Service provider details are added in 
   - Download vcf card
   - Social media links
   - Download setav app
-    - App store
-    - Play store
+    - App store (https://apps.apple.com/in/app/setav/id6738992536)
+    - Play store (https://play.google.com/store/apps/details?id=ai.setav.customer)
