@@ -1,8 +1,5 @@
-import Box from "@mui/material/Box";
+import Landing from "../landing/Landing";
 
 export default function Home() {
-    return (
-        <Box>
-        </Box>
-    );
+    return <Landing />;
 }
