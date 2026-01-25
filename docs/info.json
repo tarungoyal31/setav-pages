@@ -1,69 +1,173 @@
 {
-  "name": "Fit n Glow",
-  "phone_number": "91-9632190780",
+  "name": "Sanjay Prasad",
+  "phone_number": "91-9810895239",
   "info_group": {
-    "id": "2",
-    "name": "Fit n Glow",
-    "image": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-1728399344-1000037748.jpg",
-    "card_color": "4294951175",
+    "id": "14",
+    "name": "Sanjay Prasad",
+    "image": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-1733041092-1000059295.jpg",
+    "card_color": "4294948492",
     "profession": {
-      "name": "Nutritionist",
-      "type": "nutritionist"
+      "name": "Astrologer",
+      "type": "astrologer"
     },
-    "about": "Fit n glow is gives a wholesome package for weightloss, healthy eating behaviour, high protein food intake, usage of natural home products for skin and cooking methodology.",
+    "about": "Astrology,Numerology,Vaastu  Consultation",
     "is_public": true,
-    "public_link": "fitnglow",
+    "public_link": "sanjayprasad",
     "infos": [
       {
         "id": "0",
         "name": "Full Name",
-        "value": "Shreya Suman",
+        "value": "Sanjay Prasad",
         "config_type": "full_name",
         "icon": "icon_person"
       },
       {
         "id": "1",
         "name": "Phone Number",
-        "value": "91-9632190780",
+        "value": "91-9810895239",
         "config_type": "phone",
         "icon": "icon_phone"
       },
       {
         "id": "2",
         "name": "Email",
-        "value": "shreyasuman07@gmail.com",
+        "value": "sanjayprasadsp2314@gmail.com",
         "config_type": "email",
         "icon": "icon_email"
       },
       {
+        "id": "3",
+        "name": "Address",
+        "value": "Office",
+        "config_type": "address",
+        "icon": "icon_address",
+        "address": {
+          "label": "Office",
+          "house_no": "Malviya Nagar",
+          "street": "Near Post office,Malviya Nagar,New Delhi India",
+          "city": "New Delhi",
+          "state": "Delhi",
+          "zip": "110017",
+          "country": "India",
+          "google_place_id": "",
+          "lat_lng": null,
+          "google_location": {
+            "name": "3rd Floor",
+            "locality": "New Delhi",
+            "lat_lng": {
+              "lat": 28.5342332,
+              "lng": 77.2094473
+            },
+            "formatted_address": "3rd Floor, C-5, above KFC, Block E, Malviya Nagar, New Delhi, Delhi 110017, India",
+            "place_id": "ChIJCaxdUf_jDDkR91Ktj8G-4Ts",
+            "postal_code": "110017",
+            "country": {
+              "short_name": "IN",
+              "long_name": "IN"
+            },
+            "city": {
+              "short_name": "New Delhi",
+              "long_name": "New Delhi"
+            },
+            "administrative_area_level_1": {
+              "short_name": "DL",
+              "long_name": "DL"
+            },
+            "administrative_area_level_2": {
+              "short_name": "Delhi Division",
+              "long_name": "Delhi Division"
+            },
+            "sub_locality_level_1": {
+              "short_name": "Malviya Nagar",
+              "long_name": "Malviya Nagar"
+            },
+            "sub_locality_level_2": {
+              "short_name": "Block E",
+              "long_name": "Block E"
+            }
+          },
+          "display_title": "Office",
+          "display_subtitle": "New Delhi"
+        }
+      },
+      {
         "id": "5",
         "name": "Instagram",
-        "value": "@fit_and_glow__",
+        "value": "@turning.point.888.astrology",
         "config_type": "instagram",
         "icon": "icon_instagram",
-        "link_address": "https://www.instagram.com/fit_and_glow__"
+        "link_address": "https://www.instagram.com/turning.point.888.astrology"
+      },
+      {
+        "id": "6",
+        "name": "Website",
+        "value": "http://www.youtube.com/@turningpoint888astrology",
+        "config_type": "website",
+        "icon": "icon_website",
+        "link_address": "http://www.youtube.com/@turningpoint888astrology"
+      },
+      {
+        "id": "7",
+        "name": "YouTube",
+        "value": "@turningpoint888astrology",
+        "config_type": "youtube",
+        "icon": "icon_youtube",
+        "link_address": "https://www.youtube.com/@turningpoint888astrology"
       }
     ],
     "images": [
       {
         "meta": {
           "id": "default",
-          "name": ""
+          "name": "pictures of Sanjay Prasad"
         },
         "images": [
           {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964477-1000049271.jpg"
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733226886-1000073537.jpg"
           },
           {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964489-1000049272.jpg"
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042429-1000059296.jpg"
           },
           {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964496-1000049273.jpg"
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042467-2865f831-506e-451f-a7c9-28c820b23835-1_all_14342.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042537-2865f831-506e-451f-a7c9-28c820b23835-1_all_14314.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042612-2865f831-506e-451f-a7c9-28c820b23835-1_all_13528.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042634-2865f831-506e-451f-a7c9-28c820b23835-1_all_14264.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042705-2865f831-506e-451f-a7c9-28c820b23835-1_all_12082.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120165-1000073436.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120187-1000073437.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120201-1000073435.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120212-1000073434.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120225-1000073433.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120265-1000073432.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120573-1000073438.jpg"
           }
         ]
       }
     ],
-    "full_name": "Shreya Suman",
-    "phone_number": "91-9632190780"
+    "full_name": "Sanjay Prasad",
+    "phone_number": "91-9810895239"
   }
 }

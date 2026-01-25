@@ -1,22 +1,96 @@
 {
   "products": [
     {
-      "id": "1",
-      "group_id": "2",
-      "name": "1 month plan",
-      "description": "Plan includes: 2 Charts will be provided along with blood work report check up by the doctor. Home remedies for tropical skin care and tips on Cooking methodology",
-      "additional_information": "Lose upto 4 kgs in a month",
+      "id": "10",
+      "group_id": "14",
+      "name": "Vaastu consultation",
+      "description": "Vastu consultation for offices, residences, plots and houses",
+      "appointment_type": 1,
+      "duration_in_sec": 3600,
+      "is_active": true,
+      "price": {
+        "currency": "INR",
+        "units": 5100,
+        "sub_units": 0,
+        "display_string": "₹ 5100.0"
+      },
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769346392,
+      "updated_at": 1769346392
+    },
+    {
+      "id": "7",
+      "group_id": "14",
+      "name": "Vedic astrology",
+      "description": "30 mins session of vedic astrology",
       "appointment_type": 1,
       "duration_in_sec": 1800,
       "is_active": true,
       "price": {
         "currency": "INR",
-        "units": 4001,
+        "units": 2100,
         "sub_units": 0,
-        "display_string": "₹ 4001.0"
+        "display_string": "₹ 2100.0"
       },
-      "created_at": 1768280182,
-      "updated_at": 1768281554
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769346196,
+      "updated_at": 1769346196
+    },
+    {
+      "id": "8",
+      "group_id": "14",
+      "name": "Vedic astrology",
+      "description": "1 hr session of Vedic astrology",
+      "appointment_type": 1,
+      "duration_in_sec": 3600,
+      "is_active": true,
+      "price": {
+        "currency": "INR",
+        "units": 3100,
+        "sub_units": 0,
+        "display_string": "₹ 3100.0"
+      },
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769346224,
+      "updated_at": 1769346224
+    },
+    {
+      "id": "9",
+      "group_id": "14",
+      "name": "Full kundli analysis",
+      "description": "1 kundli analysis",
+      "appointment_type": 1,
+      "duration_in_sec": 3600,
+      "is_active": true,
+      "price": {
+        "currency": "INR",
+        "units": 5100,
+        "sub_units": 0,
+        "display_string": "₹ 5100.0"
+      },
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769346327,
+      "updated_at": 1769346327
     }
   ]
 }
