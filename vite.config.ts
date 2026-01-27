@@ -12,8 +12,8 @@ export default defineConfig({
         manualChunks: {
           // Vendor chunks for better caching
           'vendor-react': ['react', 'react-dom'],
-          'vendor-mui': ['@mui/material', '@mui/icons-material'],
-          'vendor-emotion': ['@emotion/react', '@emotion/styled'],
+          // MUI and Emotion must be in the same chunk to avoid circular dependency
+          'vendor-mui': ['@mui/material', '@mui/icons-material', '@emotion/react', '@emotion/styled'],
           'vendor-router': ['react-router-dom'],
         },
       },
