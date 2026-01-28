@@ -11,7 +11,7 @@ const theme = createTheme({
     palette: {
         primary: {
             main: M3Colors.primary,
-            contrastText: M3Colors.onSurface,
+            contrastText: "#FFFFFF",
         },
         secondary: {
             main: M3Colors.secondary,
