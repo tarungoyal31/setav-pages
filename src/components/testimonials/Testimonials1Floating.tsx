@@ -12,16 +12,16 @@ const userTestimonials = [
   {
     initials: 'SS',
     name: 'Shreya Suman',
-    occupation: 'Marketing Professional',
+    occupation: 'Nutritionist',
     testimonial:
-      "Setav has completely changed how I network. I just share my personal card via a one-time link, and my contacts have everything they need. No more fumbling with paper cards at events!",
+      "Setav has made it so easy for my clients to book consultations and access my diet plans. I list all my services, and clients can see my packages and book directly. It's streamlined my entire practice!",
   },
   {
     initials: 'SP',
     name: 'Sanjay Prasad',
-    occupation: 'Fitness Trainer',
+    occupation: 'Astrologer',
     testimonial:
-      "As a fitness trainer, listing my services on Setav has been a game-changer. Clients can see my packages, pricing, and book sessions directly. My bookings have increased significantly!",
+      "As an astrologer, Setav helps me connect with clients seeking guidance. They can view my consultation types, book readings, and I get automatic calendar reminders. My client base has grown tremendously!",
   },
   {
     initials: 'AG',
