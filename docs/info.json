@@ -6,14 +6,18 @@
     "name": "Ajna Eye",
     "image": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-1727348553-1000034759.jpg",
     "card_color": "4294948492",
-    "about": "Discover healing with AjnaEye",
+    "profession": {
+      "name": "Reiki healer",
+      "type": "reiki_healer"
+    },
+    "about": "Ajnaeye is a healing platform designed to promote calmness and inner balance. It supports people dealing with anger issues, sleep problems, and physical or emotional pain through holistic healing practices. Ajnaeye offers Jikiden Healing, Holy Fire Reiki, and Karuna Reiki, along with tarot card readings to understand a person’s energy. It also provides numerology-based predictions, helping with insights into house numbers, car numbers, and remedies connected to one’s date of birth",
     "is_public": true,
     "public_link": "o_8mkuioi",
     "infos": [
       {
         "id": "0",
         "name": "Full Name",
-        "value": "Shreya Suman",
+        "value": "Shreiyaa Summan",
         "config_type": "full_name",
         "icon": "icon_person"
       },
@@ -27,9 +31,16 @@
       {
         "id": "2",
         "name": "Email",
-        "value": "shreyasuman07@gmail.com",
+        "value": "shreiyaasumman@gmail.com",
         "config_type": "email",
         "icon": "icon_email"
+      },
+      {
+        "id": "4",
+        "name": "Website",
+        "value": "www.ajnaeye.com",
+        "config_type": "website",
+        "icon": "icon_website"
       },
       {
         "id": "5",
@@ -51,9 +62,6 @@
             "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1727348019-1000040215.jpg"
           },
           {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1727348064-1000040219.jpg"
-          },
-          {
             "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1727348075-1000040220.jpg"
           },
           {
@@ -68,13 +76,7 @@
         ]
       }
     ],
-    "full_name": "Shreya Suman",
-    "phone_number": "91-9632190780",
-    "business_details": {
-      "upi": {
-        "id": "shreyasuman07-1@okhdfcbank",
-        "merchant_name": ""
-      }
-    }
+    "full_name": "Shreiyaa Summan",
+    "phone_number": "91-9632190780"
   }
 }

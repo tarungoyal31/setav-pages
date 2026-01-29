@@ -1,9 +1,17 @@
-Generate a website for $brand$, This is a website for nutritionist $name$. Use @docs/Base.md
+Generate a website for Ajna Eye, This is a website for a reiki healer / tarrot reading professional Shreiyaa Summan. Use @docs/Base.md
   for information on how to create the website. @docs/Service.md @docs/info.json
   @docs/appointment_products.json are to be used to get more information.
 
-  About: $about$
+  About Shreiyaa Summan: She is a reiki healer and tarot reading professional who helps clients find balance and clarity in their lives through energy healing and intuitive guidance.
+  Specialities: Reiki healing certification from https://www.reiki.org/ (The international center for Reiki training)
+  Numerology and tarrot card certification from astrology club - Khushboo shokeen (https://khushbooshokeen.com/)
 
-  Color scheme: $color_scheme$
+  Experience: 4+years in Reiki
+  Study: M.Sc. Public Health from Lady Irwin College, Delhi University
+
+  Color scheme: Derived from rgba(213,150,203,100)
 
   Think hard on the plan and clarify any doubts if you are not 90% sure.
+
+  Do not refer other branches to create similar websites.
+  
