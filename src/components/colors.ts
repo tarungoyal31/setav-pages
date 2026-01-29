@@ -1,10 +1,10 @@
-// Colors constants
+// Colors constants - Blue/tech modern palette
 export const M3Colors = {
-    primary: "#8C4F27",
-    secondary: "#765847",
-    surface: "#FCEAE2",
-    surfaceHigh: "#F6E5DD",
-    surfaceHighest: "#F0DFD7",
-    onSurface: "#221A15",
-    onSurfaceVariant: "#52443C",
+    primary: "#1565C0",
+    secondary: "#42A5F5",
+    surface: "#F5F7FA",
+    surfaceHigh: "#EDF1F7",
+    surfaceHighest: "#E3E8F0",
+    onSurface: "#0D1B2A",
+    onSurfaceVariant: "#415A77",
 };

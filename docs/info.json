@@ -1,69 +1,74 @@
 {
-  "name": "Fit n Glow",
-  "phone_number": "91-9632190780",
+  "name": "Tarun Goyal",
+  "phone_number": "91-7259966448",
   "info_group": {
-    "id": "2",
-    "name": "Fit n Glow",
-    "image": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-1728399344-1000037748.jpg",
-    "card_color": "4294951175",
+    "id": "1",
+    "name": "Tarun Goyal",
+    "image": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/1-1728550882-2939b6f9-0dd2-41a3-935a-3a573cde153e-1_all_79526.png",
+    "card_color": "4294948492",
     "profession": {
-      "name": "Nutritionist",
-      "type": "nutritionist"
+      "name": "Software Developer",
+      "type": "software_developer"
     },
-    "about": "Fit n glow is gives a wholesome package for weightloss, healthy eating behaviour, high protein food intake, usage of natural home products for skin and cooking methodology.",
+    "about": "Founder of Setav\n\nLeveraging 10+ years of experience at Google, Reddit and Zomato, I am building professional networking app for era of AI",
     "is_public": true,
-    "public_link": "fitnglow",
+    "public_link": "o_gAUBbAy",
     "infos": [
       {
         "id": "0",
         "name": "Full Name",
-        "value": "Shreya Suman",
+        "value": "Tarun Goyal",
         "config_type": "full_name",
         "icon": "icon_person"
       },
       {
         "id": "1",
         "name": "Phone Number",
-        "value": "91-9632190780",
+        "value": "91-7259966448",
         "config_type": "phone",
         "icon": "icon_phone"
       },
       {
         "id": "2",
         "name": "Email",
-        "value": "shreyasuman07@gmail.com",
+        "value": "tarungoyal31@gmail.com",
         "config_type": "email",
         "icon": "icon_email"
       },
       {
+        "id": "3",
+        "name": "Website",
+        "value": "https://www.setav.ai",
+        "config_type": "website",
+        "icon": "icon_website",
+        "link_address": "https://www.setav.ai"
+      },
+      {
+        "id": "4",
+        "name": "Company",
+        "value": "Setav Innovations Private Limited",
+        "config_type": "company",
+        "icon": "icon_company"
+      },
+      {
         "id": "5",
-        "name": "Instagram",
-        "value": "@fit_and_glow__",
-        "config_type": "instagram",
-        "icon": "icon_instagram",
-        "link_address": "https://www.instagram.com/fit_and_glow__"
+        "name": "LinkedIn",
+        "value": "tarungoyal31",
+        "config_type": "linkedin",
+        "icon": "icon_linkedin",
+        "link_address": "https://www.linkedin.com/in/tarungoyal31"
       }
     ],
     "images": [
       {
         "meta": {
           "id": "default",
-          "name": ""
+          "name": "Screenshots 1"
         },
-        "images": [
-          {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964477-1000049271.jpg"
-          },
-          {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964489-1000049272.jpg"
-          },
-          {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964496-1000049273.jpg"
-          }
-        ]
+        "images": []
       }
     ],
-    "full_name": "Shreya Suman",
-    "phone_number": "91-9632190780"
+    "full_name": "Tarun Goyal",
+    "phone_number": "91-7259966448"
   }
 }

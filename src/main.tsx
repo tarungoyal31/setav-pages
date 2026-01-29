@@ -11,11 +11,11 @@ const theme = createTheme({
     palette: {
         primary: {
             main: M3Colors.primary,
-            contrastText: M3Colors.onSurface,
+            contrastText: "#fff",
         },
         secondary: {
             main: M3Colors.secondary,
-            contrastText: M3Colors.onSurface,
+            contrastText: "#fff",
         },
         background: {
             default: M3Colors.surface,
@@ -26,9 +26,14 @@ const theme = createTheme({
             secondary: M3Colors.onSurfaceVariant,
         },
     },
-
-    components: {
+    typography: {
+        fontFamily: '"Inter", system-ui, Avenir, Helvetica, Arial, sans-serif',
+        h1: { fontWeight: 700 },
+        h2: { fontWeight: 700 },
+        h3: { fontWeight: 600 },
+        h4: { fontWeight: 600 },
     },
+    components: {},
 });
 
 

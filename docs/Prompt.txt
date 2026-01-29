@@ -1,9 +1,12 @@
-Generate a website for $brand$, This is a website for nutritionist $name$. Use @docs/Base.md
+Generate a website for Tarun Goyal, This is a website for founder of Setav Innovations Pvt. Ltd.. Use @docs/Base.md
   for information on how to create the website. @docs/Service.md @docs/info.json
   @docs/appointment_products.json are to be used to get more information.
 
-  About: $about$
+  About: Tarun Goyal is founder of Setav Innovations Pvt. Ltd.. He is passionate about technology and innovation.
+  He is an expert software developer with over 10 years of experience in the industry. He has experience working in companies like Google, Walmart and Zomato.
+  He has lead multiple successful projects and has a proven track record of delivering high-quality software solutions.
+  He has done his B.Tech and M.Tech from IIT Roorkee and has represented India in various international coding competitions such as ACM ICPC.
 
-  Color scheme: $color_scheme$
+  More details can be found at https://www.linkedin.com/in/tarungoyal31/
 
   Think hard on the plan and clarify any doubts if you are not 90% sure.
