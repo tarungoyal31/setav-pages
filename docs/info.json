@@ -1,18 +1,14 @@
 {
-  "name": "Fit n Glow",
+  "name": "Ajna Eye",
   "phone_number": "91-9632190780",
   "info_group": {
-    "id": "2",
-    "name": "Fit n Glow",
-    "image": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-1728399344-1000037748.jpg",
-    "card_color": "4294951175",
-    "profession": {
-      "name": "Nutritionist",
-      "type": "nutritionist"
-    },
-    "about": "Fit n glow is gives a wholesome package for weightloss, healthy eating behaviour, high protein food intake, usage of natural home products for skin and cooking methodology.",
+    "id": "3",
+    "name": "Ajna Eye",
+    "image": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-1727348553-1000034759.jpg",
+    "card_color": "4294948492",
+    "about": "Discover healing with AjnaEye",
     "is_public": true,
-    "public_link": "fitnglow",
+    "public_link": "o_8mkuioi",
     "infos": [
       {
         "id": "0",
@@ -38,32 +34,47 @@
       {
         "id": "5",
         "name": "Instagram",
-        "value": "@fit_and_glow__",
+        "value": "@ajnaeye1111",
         "config_type": "instagram",
         "icon": "icon_instagram",
-        "link_address": "https://www.instagram.com/fit_and_glow__"
+        "link_address": "https://www.instagram.com/ajnaeye1111"
       }
     ],
     "images": [
       {
         "meta": {
           "id": "default",
-          "name": ""
+          "name": "Services"
         },
         "images": [
           {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964477-1000049271.jpg"
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1727348019-1000040215.jpg"
           },
           {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964489-1000049272.jpg"
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1727348064-1000040219.jpg"
           },
           {
-            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1732964496-1000049273.jpg"
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1727348075-1000040220.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1769569213-image_picker_B6C9A057-A9EA-4666-BAD7-4476ED09FAE4-6314-000000C403AF0403.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1769570065-image_picker_0423B7CB-17C1-4932-B5DC-EA0C25A1D441-6314-000000C8C671958A.jpg"
+          },
+          {
+            "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/2-default-1769570082-image_picker_91ABA4D6-2C97-4DAE-A969-ED01885BE6B9-6314-000000C8DDC0A622.jpg"
           }
         ]
       }
     ],
     "full_name": "Shreya Suman",
-    "phone_number": "91-9632190780"
+    "phone_number": "91-9632190780",
+    "business_details": {
+      "upi": {
+        "id": "shreyasuman07-1@okhdfcbank",
+        "merchant_name": ""
+      }
+    }
   }
 }

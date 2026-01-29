@@ -1,22 +1,100 @@
 {
   "products": [
     {
-      "id": "1",
-      "group_id": "2",
-      "name": "1 month plan",
-      "description": "Plan includes: 2 Charts will be provided along with blood work report check up by the doctor. Home remedies for tropical skin care and tips on Cooking methodology",
-      "additional_information": "Lose upto 4 kgs in a month",
+      "id": "11",
+      "group_id": "3",
+      "name": "Tarot Reading",
+      "description": "Provide insight about relationship, career, family, work culture, lifepath goals",
+      "additional_information": "Tarot reading can be beneficial as a reflective and intuitive tool that helps people gain clarity, perspective, and emotional insight rather than concrete predictions. By using symbolic imagery and storytelling, tarot encourages self-reflection, helping individuals explore their thoughts, feelings, and patterns from a new angle. It can be especially useful during moments of uncertainty, offering guidance, reassurance, or validation that supports decision-making and personal growth. For many, tarot also provides a calming ritual that fosters mindfulness and self-connection.",
       "appointment_type": 1,
       "duration_in_sec": 1800,
       "is_active": true,
       "price": {
         "currency": "INR",
-        "units": 4001,
+        "units": 2100,
         "sub_units": 0,
-        "display_string": "₹ 4001.0"
+        "display_string": "₹ 2100.0"
       },
-      "created_at": 1768280182,
-      "updated_at": 1768281554
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769569021,
+      "updated_at": 1769569033
+    },
+    {
+      "id": "12",
+      "group_id": "3",
+      "name": "Jikiden Reiki Healing",
+      "description": "Jikiden Reiki for removing negative aspect from your current situation. It helps in low confidence, anger issues, insomnia",
+      "additional_information": "People often experience deep relaxation, emotional balance, improved sleep, and a greater sense of clarity and well-being. While it doesn’t replace medical care, Jikiden Reiki is commonly used as a complementary practice to promote harmony between the body, mind, and emotions",
+      "appointment_type": 1,
+      "duration_in_sec": 1800,
+      "is_active": true,
+      "price": {
+        "currency": "INR",
+        "units": 3100,
+        "sub_units": 0,
+        "display_string": "₹ 3100.0"
+      },
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769569718,
+      "updated_at": 1769569733
+    },
+    {
+      "id": "13",
+      "group_id": "3",
+      "name": "HOLYFIRE Reiki Healing",
+      "description": "Holy Fire® Reiki and Karuna Reiki® together work with a set of 13 advanced symbols that are used for deep healing, compassion, and spiritual growth. These symbols are believed to help clear subconscious blocks, heal emotional wounds (including trauma and past-life pattern",
+      "additional_information": "Holy Fire® Reiki energy is a modern form of Reiki that is said to work at a deep spiritual and emotional level while still supporting physical and mental well-being. It is experienced as gentle yet powerful energy that promotes deep relaxation, emotional healing, clarity, and inner peace. Many people report feeling a sense of warmth, comfort, and safety, along with the release of old emotional patterns, stress, or trauma. Holy Fire Reiki is often described as having a nurturing, compassionate quality that supports personal growth, empowerment, and a stronger connection to one’s inner wisdom and purpose.",
+      "appointment_type": 1,
+      "duration_in_sec": 3600,
+      "is_active": true,
+      "price": {
+        "currency": "INR",
+        "units": 3100,
+        "sub_units": 0,
+        "display_string": "₹ 3100.0"
+      },
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769569856,
+      "updated_at": 1769569856
+    },
+    {
+      "id": "14",
+      "group_id": "3",
+      "name": "Numerology",
+      "description": "Numerology can be used as a guidance tool for career, marriage, and life partner choices by offering insight into compatibility, strengths, and life themes based on numbers derived from birth dates and names.",
+      "additional_information": "Numerology analysis offers insight into personality traits, life purpose, strengths, and recurring challenges by interpreting the symbolic meaning of numbers connected to your birth date and name. Its benefits include increased self-awareness, clearer direction in career and relationships, and a better understanding of personal cycles and timing. Many people use numerology as a reflective tool to identify patterns, make more confident decisions, and align their actions with their natural tendencies.",
+      "appointment_type": 1,
+      "duration_in_sec": 1800,
+      "is_active": true,
+      "price": {
+        "currency": "INR",
+        "units": 2100,
+        "sub_units": 0,
+        "display_string": "₹ 2100.0"
+      },
+      "strike_price": {
+        "currency": "INR",
+        "units": 0,
+        "sub_units": 0,
+        "display_string": "₹ 0.0"
+      },
+      "created_at": 1769570011,
+      "updated_at": 1769570011
     }
   ]
 }
