@@ -16,10 +16,3 @@ swag_gen:
 	npx swagger-typescript-api -p doc.json -o ./src/swag/
 	mv doc.json ./src/swag/doc.json
 
-deploy:
-	npm run build
-	firebase deploy --only hosting
-
-firebase_login:
-	firebase login --reauth
-
