@@ -8,7 +8,7 @@ import illustration from '../../assets/illustration.jpg';
 const StyledBox = styled('div')(({ theme }) => ({
     alignSelf: 'center',
     width: '100%',
-    height: 200,
+    height: 180,
     marginTop: theme.spacing(6),
     borderRadius: (theme.vars || theme).shape.borderRadius,
     outline: '6px solid',
@@ -55,7 +55,7 @@ export default function Hero1Floating() {
                     flexDirection: 'column',
                     alignItems: 'center',
                     pt: { xs: 14, sm: 20 },
-                    pb: { xs: 8, sm: 12 },
+                    pb: { xs: 8, sm: 0 },
                 }}
             >
                 <Stack
