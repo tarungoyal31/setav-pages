@@ -55,7 +55,7 @@ export default function Faq1Floating() {
                         id="panel1d-header"
                     >
                         <Typography component="span" variant="subtitle2">
-                            How do I create a digital card?
+                            How does the website creation process work?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -64,9 +64,10 @@ export default function Faq1Floating() {
                             gutterBottom
                             sx={{ maxWidth: { sm: '100%', md: '70%' } }}
                         >
-                            Simply download the Setav app from the App Store or Google Play, sign up with your email,
-                            and follow the guided setup to create your personal or business card. You can add your
-                            contact details, social links, and services in just a few minutes.
+                            It starts with a conversation. You tell us about your business, goals, and preferences.
+                            We then design and build your website, share it with you for feedback, and make revisions
+                            until you are happy. Once approved, we launch it live. Contact us at&nbsp;
+                            <Link href="mailto:support@setav.ai">support@setav.ai</Link>&nbsp;to get started.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -80,7 +81,7 @@ export default function Faq1Floating() {
                         id="panel2d-header"
                     >
                         <Typography component="span" variant="subtitle2">
-                            What&apos;s the difference between personal and business cards?
+                            How long does it take to build my website?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -89,9 +90,9 @@ export default function Faq1Floating() {
                             gutterBottom
                             sx={{ maxWidth: { sm: '100%', md: '70%' } }}
                         >
-                            Personal cards are designed for individuals who want to share contact information privately
-                            through one-time links. Business cards are public, discoverable on the platform, and include
-                            features like service catalogs, pricing, and booking systems for professionals selling services.
+                            Most websites are designed and launched within one to two weeks, depending on the scope
+                            and complexity. We work closely with you to keep things moving and ensure a quick turnaround
+                            without sacrificing quality.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -105,7 +106,7 @@ export default function Faq1Floating() {
                         id="panel3d-header"
                     >
                         <Typography component="span" variant="subtitle2">
-                            How does the booking system work?
+                            Do I need to provide hosting or a domain name?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -114,9 +115,9 @@ export default function Faq1Floating() {
                             gutterBottom
                             sx={{ maxWidth: { sm: '100%', md: '70%' } }}
                         >
-                            With Plus and Pro plans, customers can book time slots directly from your business card.
-                            Once a booking is confirmed, both you and your customer receive calendar invites automatically.
-                            You can set your availability and manage bookings through the app.
+                            No. We take care of domain registration, hosting, and SSL certificates as part of our
+                            service. If you already have a domain, we can use that too. Everything is set up and
+                            managed for you.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>
@@ -130,7 +131,7 @@ export default function Faq1Floating() {
                         id="panel4d-header"
                     >
                         <Typography component="span" variant="subtitle2">
-                            Is my personal information secure?
+                            Can I update my website content after it is built?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -139,9 +140,9 @@ export default function Faq1Floating() {
                             gutterBottom
                             sx={{ maxWidth: { sm: '100%', md: '70%' } }}
                         >
-                            Absolutely. Personal cards use one-time links that you control, meaning your information
-                            is only shared with people you choose. We use industry-standard encryption and never sell
-                            your data. For any questions, contact us at&nbsp;
+                            Yes. Whenever you need to update text, images, or add new pages, just reach out to us
+                            and we will make the changes for you. We keep the process simple so your website always
+                            stays current. Contact us at&nbsp;
                             <Link href="mailto:support@setav.ai">support@setav.ai</Link>.
                         </Typography>
                     </AccordionDetails>
@@ -156,7 +157,7 @@ export default function Faq1Floating() {
                         id="panel5d-header"
                     >
                         <Typography component="span" variant="subtitle2">
-                            How do I accept payments through my business card?
+                            What if I already have a website and want a redesign?
                         </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
@@ -165,10 +166,10 @@ export default function Faq1Floating() {
                             gutterBottom
                             sx={{ maxWidth: { sm: '100%', md: '70%' } }}
                         >
-                            Payment processing is available with the Pro plan. Once enabled, customers can pay for your
-                            services directly through your business card. Payments are processed securely, and funds are
-                            transferred to your linked bank account. Contact&nbsp;
-                            <Link href="mailto:support@setav.ai">support@setav.ai</Link>&nbsp;to get started.
+                            We handle redesigns too. We will review your existing site, discuss what you want to change,
+                            and build a fresh version that better represents your brand. Your existing domain and
+                            content can be carried over. Contact&nbsp;
+                            <Link href="mailto:support@setav.ai">support@setav.ai</Link>&nbsp;to discuss your project.
                         </Typography>
                     </AccordionDetails>
                 </Accordion>

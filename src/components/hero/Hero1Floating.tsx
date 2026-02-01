@@ -72,19 +72,20 @@ export default function Hero1Floating() {
                             fontSize: 'clamp(3rem, 10vw, 3.5rem)',
                         }}
                     >
-                        Connect&nbsp;through&nbsp;
+                        Websites built&nbsp;
                         <Typography
                             component="span"
                             variant="h1"
                             sx={(theme) => ({
                                 fontSize: 'inherit',
                                 color: 'primary.main',
+                                fontStyle: 'italic',
                                 ...theme.applyStyles('dark', {
                                     color: 'primary.light',
                                 }),
                             })}
                         >
-                            cards
+                            for you
                         </Typography>
                     </Typography>
                     <Typography
@@ -94,9 +95,9 @@ export default function Hero1Floating() {
                             width: { sm: '100%', md: '80%' },
                         }}
                     >
-                        Setav connects individuals and businesses through digital cards.
-                        Create your personal card to share contact info, or build a business
-                        card to showcase and sell your services.
+                        Setav designs and builds professional, custom websites for businesses
+                        and individuals. Mobile-responsive, SEO-optimized, and fully managed
+                        — so you can focus on what you do best.
                     </Typography>
 
                 </Stack>

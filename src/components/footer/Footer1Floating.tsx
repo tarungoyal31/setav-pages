@@ -1,12 +1,8 @@
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import IconButton from '@mui/material/IconButton';
 import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import AppleIcon from '@mui/icons-material/Apple';
-import AndroidIcon from '@mui/icons-material/Android';
 
 function Copyright() {
     return (
@@ -52,57 +48,19 @@ export default function Footer1Floating() {
                     <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
                         <img src={"/logo192.png"} width='48px' height='48px' alt={"Setav logo"}/>
                         <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
-                            Download the App
+                            Custom websites, built for you.
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary', mb: 2 }}>
-                            Get Setav on your mobile device and start connecting today.
+                            Professional web design and development for businesses and individuals.
                         </Typography>
-                        <Stack direction={{ xs: 'column', sm: 'row' }} spacing={1.5} useFlexGap>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                href="https://apps.apple.com/in/app/setav/id6738992536"
-                                target="_blank"
-                                rel="noopener"
-                                startIcon={<AppleIcon />}
-                                sx={{
-                                    textTransform: 'none',
-                                    px: 2,
-                                    py: 1,
-                                }}
-                            >
-                                <Box sx={{ textAlign: 'left' }}>
-                                    <Typography variant="caption" sx={{ display: 'block', lineHeight: 1, fontSize: '0.65rem' }}>
-                                        Download on the
-                                    </Typography>
-                                    <Typography variant="body2" sx={{ fontWeight: 600, lineHeight: 1.2 }}>
-                                        App Store
-                                    </Typography>
-                                </Box>
-                            </Button>
-                            <Button
-                                variant="contained"
-                                color="primary"
-                                href="https://play.google.com/store/apps/details?id=ai.setav.customer"
-                                target="_blank"
-                                rel="noopener"
-                                startIcon={<AndroidIcon />}
-                                sx={{
-                                    textTransform: 'none',
-                                    px: 2,
-                                    py: 1,
-                                }}
-                            >
-                                <Box sx={{ textAlign: 'left' }}>
-                                    <Typography variant="caption" sx={{ display: 'block', lineHeight: 1, fontSize: '0.65rem' }}>
-                                        Get it on
-                                    </Typography>
-                                    <Typography variant="body2" sx={{ fontWeight: 600, lineHeight: 1.2 }}>
-                                        Google Play
-                                    </Typography>
-                                </Box>
-                            </Button>
-                        </Stack>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            href="mailto:support@setav.ai"
+                            sx={{ textTransform: 'none', px: 3, py: 1 }}
+                        >
+                            Get in Touch
+                        </Button>
                     </Box>
                 </Box>
                 <Box
@@ -124,31 +82,11 @@ export default function Footer1Floating() {
                     <Link color="text.secondary" variant="body2" href="/#highlights">
                         Highlights
                     </Link>
-                    <Link color="text.secondary" variant="body2" href="/#pricing">
-                        Pricing
+                    <Link color="text.secondary" variant="body2" href="/#showcase">
+                        Portfolio
                     </Link>
                     <Link color="text.secondary" variant="body2" href="/#faq">
                         FAQs
-                    </Link>
-                </Box>
-                <Box
-                    sx={{
-                        display: { xs: 'none', sm: 'flex' },
-                        flexDirection: 'column',
-                        gap: 1,
-                    }}
-                >
-                    <Typography variant="body2" sx={{ fontWeight: 'medium' }}>
-                        Download
-                    </Typography>
-                    <Link color="text.secondary" variant="body2" href="https://apps.apple.com/in/app/setav/id6738992536" target="_blank" rel="noopener">
-                        iOS App
-                    </Link>
-                    <Link color="text.secondary" variant="body2" href="https://play.google.com/store/apps/details?id=ai.setav.customer" target="_blank" rel="noopener">
-                        Android App
-                    </Link>
-                    <Link color="text.secondary" variant="body2" href="https://app.setav.ai" target="_blank" rel="noopener">
-                        Web App
                     </Link>
                 </Box>
                 <Box
@@ -197,31 +135,6 @@ export default function Footer1Floating() {
                     </Link>
                     <Copyright />
                 </div>
-                <Stack
-                    direction="row"
-                    spacing={1}
-                    useFlexGap
-                    sx={{ justifyContent: 'left', color: 'text.secondary' }}
-                >
-                    <IconButton
-                        color="inherit"
-                        size="small"
-                        href="https://apps.apple.com/in/app/setav/id6738992536"
-                        aria-label="iOS App"
-                        sx={{ alignSelf: 'center' }}
-                    >
-                        <AppleIcon />
-                    </IconButton>
-                    <IconButton
-                        color="inherit"
-                        size="small"
-                        href="https://play.google.com/store/apps/details?id=ai.setav.customer"
-                        aria-label="Android App"
-                        sx={{ alignSelf: 'center' }}
-                    >
-                        <AndroidIcon />
-                    </IconButton>
-                </Stack>
             </Box>
         </Container>
     );

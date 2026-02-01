@@ -89,11 +89,11 @@ export default function AppBar1Floating() {
                             <Button variant="text" color="info" size="small" onClick={() => handleNavClick('testimonials')}>
                                 Testimonials
                             </Button>
+                            <Button variant="text" color="info" size="small" onClick={() => handleNavClick('showcase')}>
+                                Portfolio
+                            </Button>
                             <Button variant="text" color="info" size="small" onClick={() => handleNavClick('highlights')}>
                                 Highlights
-                            </Button>
-                            <Button variant="text" color="info" size="small" onClick={() => handleNavClick('pricing')}>
-                                Pricing
                             </Button>
                             <Button variant="text" color="info" size="small" sx={{minWidth: 0}} onClick={() => handleNavClick('faq')}>
                                 FAQ
@@ -107,11 +107,8 @@ export default function AppBar1Floating() {
                             alignItems: 'center',
                         }}
                     >
-                        <Button color="primary" variant="text" size="small" href="https://app.setav.ai">
-                            Sign in
-                        </Button>
-                        <Button color="primary" variant="contained" size="small" href="https://app.setav.ai">
-                            Sign up
+                        <Button color="primary" variant="contained" size="small" href="mailto:support@setav.ai">
+                            Contact Us
                         </Button>
                     </Box>
                     <Box sx={{display: {xs: 'flex', md: 'none'}, gap: 1}}>
@@ -142,18 +139,13 @@ export default function AppBar1Floating() {
 
                                 <MenuItem onClick={() => handleNavClick('features')}>Features</MenuItem>
                                 <MenuItem onClick={() => handleNavClick('testimonials')}>Testimonials</MenuItem>
+                                <MenuItem onClick={() => handleNavClick('showcase')}>Portfolio</MenuItem>
                                 <MenuItem onClick={() => handleNavClick('highlights')}>Highlights</MenuItem>
-                                <MenuItem onClick={() => handleNavClick('pricing')}>Pricing</MenuItem>
                                 <MenuItem onClick={() => handleNavClick('faq')}>FAQ</MenuItem>
                                 <Divider sx={{my: 3}}/>
                                 <MenuItem>
-                                    <Button color="primary" variant="contained" fullWidth href="https://app.setav.ai">
-                                        Sign up
-                                    </Button>
-                                </MenuItem>
-                                <MenuItem>
-                                    <Button color="primary" variant="outlined" fullWidth href="https://app.setav.ai">
-                                        Sign in
+                                    <Button color="primary" variant="contained" fullWidth href="mailto:support@setav.ai">
+                                        Contact Us
                                     </Button>
                                 </MenuItem>
                             </Box>

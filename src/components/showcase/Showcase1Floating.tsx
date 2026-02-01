@@ -151,10 +151,10 @@ export default function Showcase1Floating() {
           gutterBottom
           sx={{ color: 'text.primary' }}
         >
-          Websites Built with Setav
+          Our Portfolio
         </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-          See what others have created. These businesses are thriving with their Setav-powered websites.
+          Browse websites we have designed and built for our clients. Each one is a custom creation tailored to their brand and goals.
         </Typography>
       </Box>
 
@@ -199,7 +199,7 @@ export default function Showcase1Floating() {
         }}
       >
         <Typography variant="h6" sx={{ color: 'text.primary', fontWeight: 500 }}>
-          Launch Your Digital Presence at ₹1999/month
+          Ready to Get Your Own Website?
         </Typography>
         <Button
           variant="contained"
@@ -207,7 +207,7 @@ export default function Showcase1Floating() {
           href="mailto:support@setav.ai"
           sx={{ px: 4 }}
         >
-          Get Started
+          Contact Us
         </Button>
       </Box>
     </Container>

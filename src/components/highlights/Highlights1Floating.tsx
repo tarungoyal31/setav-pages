@@ -4,49 +4,49 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
+import BrushRoundedIcon from '@mui/icons-material/BrushRounded';
+import SupportAgentRoundedIcon from '@mui/icons-material/SupportAgentRounded';
+import DnsRoundedIcon from '@mui/icons-material/DnsRounded';
+import SpeedRoundedIcon from '@mui/icons-material/SpeedRounded';
 import LockRoundedIcon from '@mui/icons-material/LockRounded';
-import ExploreRoundedIcon from '@mui/icons-material/ExploreRounded';
-import EventAvailableRoundedIcon from '@mui/icons-material/EventAvailableRounded';
-import VerifiedUserRoundedIcon from '@mui/icons-material/VerifiedUserRounded';
 import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
 
 const items = [
     {
-        icon: <PeopleAltRoundedIcon />,
-        title: 'Two-Way Connection',
+        icon: <BrushRoundedIcon />,
+        title: 'Tailored to Your Brand',
         description:
-            'Designed for both individuals and businesses. Personal cards for networking, business cards for selling services.',
+            'Every website we build is uniquely designed to reflect your brand identity, tone, and goals. No cookie-cutter templates.',
+    },
+    {
+        icon: <SupportAgentRoundedIcon />,
+        title: 'Ongoing Support',
+        description:
+            'We are here after launch to help with updates, changes, and questions. Your website grows with your business.',
+    },
+    {
+        icon: <DnsRoundedIcon />,
+        title: 'Domain & Hosting Included',
+        description:
+            'We handle domain registration, hosting setup, and SSL certificates. Everything is taken care of for you.',
+    },
+    {
+        icon: <SpeedRoundedIcon />,
+        title: 'Performance Optimized',
+        description:
+            'Fast load times and optimized assets ensure your visitors have a smooth experience every time.',
     },
     {
         icon: <LockRoundedIcon />,
-        title: 'Privacy First',
+        title: 'Secure & Reliable',
         description:
-            'Personal cards stay private with one-time links. Share your information only with people you choose.',
-    },
-    {
-        icon: <ExploreRoundedIcon />,
-        title: 'Easy Discovery',
-        description:
-            'Business cards are public and discoverable. Let potential customers find your services on the platform.',
-    },
-    {
-        icon: <EventAvailableRoundedIcon />,
-        title: 'Instant Booking',
-        description:
-            'Integrated calendar system with automatic invites. Customers book, both parties get notified instantly.',
-    },
-    {
-        icon: <VerifiedUserRoundedIcon />,
-        title: 'Secure Transactions',
-        description:
-            'Accept payments safely through the platform. Secure payment processing for peace of mind.',
+            'Built with security best practices and reliable hosting so your website stays online and protected.',
     },
     {
         icon: <DevicesRoundedIcon />,
-        title: 'Cross-Platform',
+        title: 'Works on Every Device',
         description:
-            'Available on iOS, Android, and web. Access your cards and manage bookings from anywhere.',
+            'Responsive design that adapts to phones, tablets, and desktops. Your site looks great everywhere.',
     },
 ];
 
@@ -80,9 +80,9 @@ export default function Highlights1Floating() {
                         Why Choose Setav
                     </Typography>
                     <Typography variant="body1" sx={{ color: 'grey.400' }}>
-                        Setav provides a complete platform for digital networking. Whether you're
-                        an individual looking to share contacts or a business selling services,
-                        we have you covered.
+                        Setav delivers fully managed website creation for businesses and
+                        individuals. From design to deployment, we handle everything so you
+                        can focus on your work.
                     </Typography>
                 </Box>
                 <Grid container spacing={2}>

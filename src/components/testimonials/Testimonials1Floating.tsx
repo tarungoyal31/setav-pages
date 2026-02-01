@@ -14,35 +14,35 @@ const userTestimonials = [
     name: 'Shreya Suman',
     occupation: 'Nutritionist',
     testimonial:
-      "Setav has made it so easy for my clients to book consultations and access my diet plans. I list all my services, and clients can see my packages and book directly. It's streamlined my entire practice!",
+      "Setav built me a beautiful website that showcases my nutrition programs and makes it easy for clients to reach out. The whole process was smooth, and I had my site live within days!",
   },
   {
     initials: 'SP',
     name: 'Sanjay Prasad',
     occupation: 'Astrologer',
     testimonial:
-      "As an astrologer, Setav helps me connect with clients seeking guidance. They can view my consultation types, book readings, and I get automatic calendar reminders. My client base has grown tremendously!",
+      "I needed a professional website to showcase my astrology services, and Setav delivered exactly that. The design perfectly represents my brand, and new clients find me through search all the time now.",
   },
   {
     initials: 'AG',
     name: 'Abhishek Goyal',
     occupation: 'Consultant',
     testimonial:
-      "The QR code feature is brilliant for networking events. I just show my code, and people can save my contact instantly. Professional and efficient - exactly what I needed.",
+      "Setav created a clean, professional site for my consulting practice. They handled the domain, hosting, and SEO — I just provided the content. It was the easiest decision I made for my business.",
   },
   {
     initials: 'AR',
     name: 'Arun Rampure',
     occupation: 'Yoga Instructor',
     testimonial:
-      "The booking system is seamless. My students book their slots, and both of us get calendar invites automatically. No more back-and-forth messages to schedule sessions!",
+      "My new website from Setav looks incredible on every device. Students can browse my class schedule and get in touch directly. The turnaround was fast and the team was great to work with.",
   },
   {
     initials: 'MD',
     name: 'Moutushi Das',
     occupation: 'Freelance Designer',
     testimonial:
-      "Setting up my business card took just minutes. The interface is so intuitive, and now I have a professional digital presence that I can share with potential clients anywhere.",
+      "As a designer, I have high standards for websites. Setav exceeded my expectations with a portfolio site that truly reflects my style. They even set up my custom domain and email.",
   },
 ];
 
@@ -81,11 +81,10 @@ export default function Testimonials1Floating() {
           gutterBottom
           sx={{ color: 'text.primary' }}
         >
-          Testimonials
+          What Our Clients Say
         </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>
-          See how Setav is helping individuals and businesses connect more effectively.
-          Join thousands of users who have transformed their networking experience.
+          Hear from businesses and individuals who chose Setav to build their online presence.
         </Typography>
       </Box>
       <Grid

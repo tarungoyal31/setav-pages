@@ -5,42 +5,42 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
-import QrCode2RoundedIcon from '@mui/icons-material/QrCode2Rounded';
-import LockRoundedIcon from '@mui/icons-material/LockRounded';
-import StorefrontRoundedIcon from '@mui/icons-material/StorefrontRounded';
-import EventAvailableRoundedIcon from '@mui/icons-material/EventAvailableRounded';
-import PaymentsRoundedIcon from '@mui/icons-material/PaymentsRounded';
+import BrushRoundedIcon from '@mui/icons-material/BrushRounded';
+import PhoneIphoneRoundedIcon from '@mui/icons-material/PhoneIphoneRounded';
+import SpeedRoundedIcon from '@mui/icons-material/SpeedRounded';
+import TravelExploreRoundedIcon from '@mui/icons-material/TravelExploreRounded';
+import BuildRoundedIcon from '@mui/icons-material/BuildRounded';
 
 const items = [
     {
-        icon: <QrCode2RoundedIcon/>,
-        title: 'Digital Cards',
+        icon: <BrushRoundedIcon/>,
+        title: 'Custom Design',
         description:
-            'Create personal or business digital cards with unique QR codes. Share your contact info or services instantly.',
+            'Every website is designed from scratch to match your brand. No templates — just a unique site that represents you.',
     },
     {
-        icon: <LockRoundedIcon/>,
-        title: 'Private Sharing',
+        icon: <PhoneIphoneRoundedIcon/>,
+        title: 'Mobile Responsive',
         description:
-            'Share personal cards via secure one-time links. Your information stays private and under your control.',
+            'Your website will look and work great on every device — phones, tablets, and desktops.',
     },
     {
-        icon: <StorefrontRoundedIcon/>,
-        title: 'Service Catalog',
+        icon: <SpeedRoundedIcon/>,
+        title: 'Fast Turnaround',
         description:
-            'Businesses can list services with pricing for customers to browse. Showcase what you offer professionally.',
+            'We work efficiently to get your website live quickly without cutting corners on quality.',
     },
     {
-        icon: <EventAvailableRoundedIcon/>,
-        title: 'Booking System',
+        icon: <TravelExploreRoundedIcon/>,
+        title: 'SEO Optimized',
         description:
-            'Let customers book time slots directly through your card. Calendar invites are sent automatically to both parties.',
+            'Built with search engines in mind so your customers can find you online from day one.',
     },
     {
-        icon: <PaymentsRoundedIcon/>,
-        title: 'Secure Payments',
+        icon: <BuildRoundedIcon/>,
+        title: 'Easy Content Updates',
         description:
-            'Accept payments for services directly through business cards. Safe and seamless transactions.',
+            'Need to change text, images, or add new pages? We make updates simple and hassle-free.',
     },
 ];
 
@@ -54,13 +54,13 @@ export default function Features1Floating() {
                     gutterBottom
                     sx={{color: 'text.primary'}}
                 >
-                    Platform Features
+                    What We Build
                 </Typography>
                 <Typography
                     variant="body1"
                     sx={{color: 'text.secondary'}}
                 >
-                    Everything you need to create, share, and manage digital cards for personal or business use.
+                    Everything you need for a professional web presence, designed and built by our team.
                 </Typography>
             </Box>
             <Grid container spacing={2}>
