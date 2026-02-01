@@ -57,18 +57,24 @@ export default function Testimonials1Floating() {
   };
 
   return (
-    <Container
+    <Box
       id="testimonials"
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
-        position: 'relative',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        gap: { xs: 3, sm: 6 },
+        color: 'white',
+        bgcolor: 'grey.900',
       }}
     >
+      <Container
+        sx={{
+          position: 'relative',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: { xs: 3, sm: 6 },
+        }}
+      >
       <Box
         sx={{
           width: { sm: '100%', md: '60%' },
@@ -79,11 +85,10 @@ export default function Testimonials1Floating() {
           component="h2"
           variant="h4"
           gutterBottom
-          sx={{ color: 'text.primary' }}
         >
           Testimonials
         </Typography>
-        <Typography variant="body1" sx={{ color: 'text.secondary' }}>
+        <Typography variant="body1" sx={{ color: 'grey.400' }}>
           See how Setav is helping individuals and businesses connect more effectively.
           Join thousands of users who have transformed their networking experience.
         </Typography>
@@ -119,13 +124,16 @@ export default function Testimonials1Floating() {
                 flexDirection: 'column',
                 justifyContent: 'space-between',
                 flexGrow: 1,
+                color: 'inherit',
+                backgroundColor: 'grey.800',
+                borderColor: 'hsla(220, 25%, 25%, 0.3)',
               }}
             >
               <CardContent>
                 <Typography
                   variant="body1"
                   gutterBottom
-                  sx={{ color: 'text.secondary' }}
+                  sx={{ color: 'grey.400' }}
                 >
                   {testimonial.testimonial}
                 </Typography>
@@ -158,12 +166,13 @@ export default function Testimonials1Floating() {
               width: 8,
               height: 8,
               borderRadius: '50%',
-              bgcolor: index === activeIndex ? 'primary.main' : 'grey.300',
+              bgcolor: index === activeIndex ? 'primary.main' : 'grey.600',
               transition: 'background-color 0.3s',
             }}
           />
         ))}
       </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 }
