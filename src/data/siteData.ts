@@ -2,9 +2,9 @@ export const SITE_DATA = {
     name: "Tarun Goyal",
     profession: "Software Developer & Founder",
     company: "Setav Innovations Private Limited",
-    phone: "+917259966448",
-    phoneDisplay: "+91-7259966448",
-    email: "tarungoyal31@gmail.com",
+    phone: "+918826668006",
+    phoneDisplay: "+91-8826668006",
+    email: "tarun@setav.ai",
     website: "https://www.setav.ai",
     linkedIn: "https://www.linkedin.com/in/tarungoyal31",
     profileImage:

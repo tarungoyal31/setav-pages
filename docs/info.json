@@ -1,6 +1,6 @@
 {
   "name": "Tarun Goyal",
-  "phone_number": "91-7259966448",
+  "phone_number": "91-8826668006",
   "info_group": {
     "id": "1",
     "name": "Tarun Goyal",
@@ -24,14 +24,14 @@
       {
         "id": "1",
         "name": "Phone Number",
-        "value": "91-7259966448",
+        "value": "91-8826668006",
         "config_type": "phone",
         "icon": "icon_phone"
       },
       {
         "id": "2",
         "name": "Email",
-        "value": "tarungoyal31@gmail.com",
+        "value": "tarun@setav.ai",
         "config_type": "email",
         "icon": "icon_email"
       },
@@ -69,6 +69,6 @@
       }
     ],
     "full_name": "Tarun Goyal",
-    "phone_number": "91-7259966448"
+    "phone_number": "91-8826668006"
   }
 }
