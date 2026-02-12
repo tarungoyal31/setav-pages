@@ -1,17 +1,16 @@
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
-import { useTheme } from '@mui/material/styles';
+import {useTheme} from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import OpenInNewRoundedIcon from '@mui/icons-material/OpenInNewRounded';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
@@ -151,7 +150,7 @@ export default function Showcase1Floating() {
           gutterBottom
           sx={{ color: 'text.primary' }}
         >
-          Websites Built with Setav
+          Custom websites Built with Setav
         </Typography>
         <Typography variant="body1" sx={{ color: 'text.secondary' }}>
           See what others have created. These businesses are thriving with their Setav-powered websites.
@@ -188,28 +187,28 @@ export default function Showcase1Floating() {
         </Grid>
       )}
 
-      <Box
-        sx={{
-          mt: { xs: 2, sm: 4 },
-          textAlign: 'center',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: 2,
-        }}
-      >
-        <Typography variant="h6" sx={{ color: 'text.primary', fontWeight: 500 }}>
-          Launch Your Digital Presence at ₹1999/month
-        </Typography>
-        <Button
-          variant="contained"
-          size="large"
-          href="mailto:support@setav.ai"
-          sx={{ px: 4 }}
-        >
-          Get Started
-        </Button>
-      </Box>
+      {/*<Box*/}
+      {/*  sx={{*/}
+      {/*    mt: { xs: 2, sm: 4 },*/}
+      {/*    textAlign: 'center',*/}
+      {/*    display: 'flex',*/}
+      {/*    flexDirection: 'column',*/}
+      {/*    alignItems: 'center',*/}
+      {/*    gap: 2,*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <Typography variant="h6" sx={{ color: 'text.primary', fontWeight: 500 }}>*/}
+      {/*    Launch Your own personal website at just ₹1999/month*/}
+      {/*  </Typography>*/}
+      {/*  <Button*/}
+      {/*    variant="contained"*/}
+      {/*    size="large"*/}
+      {/*    href="mailto:support@setav.ai"*/}
+      {/*    sx={{ px: 4 }}*/}
+      {/*  >*/}
+      {/*    Get Started*/}
+      {/*  </Button>*/}
+      {/*</Box>*/}
     </Container>
   );
 }
