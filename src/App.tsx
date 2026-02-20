@@ -3,6 +3,7 @@ import Home from "./pages/Home.tsx";
 import Terms from "./pages/Terms.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import CSAE from "./pages/CSAE.tsx";
+import CancellationPolicy from "./pages/CancellationPolicy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/csae" element={<CSAE />} />
+            <Route path="/cancellation-policy" element={<CancellationPolicy />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     );
