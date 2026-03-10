@@ -16,39 +16,43 @@ export default function Footer() {
         <Box
             component="footer"
             sx={{
-                bgcolor: M3Colors.onSurface,
-                color: M3Colors.surface,
-                py: { xs: 5, md: 6 },
+                bgcolor: M3Colors.darkSurface,
+                color: "#fff",
+                pt: { xs: 6, md: 8 },
+                pb: { xs: 3, md: 4 },
             }}
         >
             <Container maxWidth="md">
-                <Typography
-                    variant="h5"
-                    sx={{
-                        textAlign: "center",
-                        fontWeight: 700,
-                        mb: 1,
-                    }}
-                >
-                    {BRAND.name}
-                </Typography>
-                <Typography
-                    sx={{
-                        textAlign: "center",
-                        opacity: 0.8,
-                        mb: 4,
-                    }}
-                >
-                    by {BRAND.owner}
-                </Typography>
+                {/* Brand */}
+                <Box sx={{ textAlign: "center", mb: 5 }}>
+                    <Typography
+                        variant="h4"
+                        sx={{
+                            fontWeight: 700,
+                            mb: 0.5,
+                            letterSpacing: -0.5,
+                        }}
+                    >
+                        {BRAND.name}
+                    </Typography>
+                    <Typography
+                        sx={{
+                            opacity: 0.5,
+                            fontSize: "0.95rem",
+                        }}
+                    >
+                        by {BRAND.owner}
+                    </Typography>
+                </Box>
 
+                {/* Action buttons */}
                 <Box
                     sx={{
                         display: "flex",
                         justifyContent: "center",
                         gap: 2,
                         flexWrap: "wrap",
-                        mb: 4,
+                        mb: 5,
                     }}
                 >
                     <Button
@@ -56,13 +60,12 @@ export default function Footer() {
                         startIcon={<Icon>contact_phone</Icon>}
                         onClick={handleSaveContact}
                         sx={{
-                            borderColor: M3Colors.surface,
-                            color: M3Colors.surface,
-                            textTransform: "none",
-                            borderRadius: 2,
+                            borderColor: "rgba(255,255,255,0.2)",
+                            color: "#fff",
+                            px: 3,
                             "&:hover": {
-                                borderColor: M3Colors.surfaceHigh,
-                                bgcolor: "rgba(255,255,255,0.1)",
+                                borderColor: "rgba(255,255,255,0.4)",
+                                bgcolor: "rgba(255,255,255,0.06)",
                             },
                         }}
                     >
@@ -74,18 +77,18 @@ export default function Footer() {
                         href={URLS.instagram}
                         target="_blank"
                         rel="noopener noreferrer"
+                        startIcon={<Icon>photo_camera</Icon>}
                         sx={{
-                            borderColor: M3Colors.surface,
-                            color: M3Colors.surface,
-                            textTransform: "none",
-                            borderRadius: 2,
+                            borderColor: "rgba(255,255,255,0.2)",
+                            color: "#fff",
+                            px: 3,
                             "&:hover": {
-                                borderColor: M3Colors.surfaceHigh,
-                                bgcolor: "rgba(255,255,255,0.1)",
+                                borderColor: "rgba(255,255,255,0.4)",
+                                bgcolor: "rgba(255,255,255,0.06)",
                             },
                         }}
                     >
-                        Follow on Instagram
+                        Instagram
                     </Button>
                     <Button
                         variant="outlined"
@@ -93,14 +96,14 @@ export default function Footer() {
                         href={URLS.setavLogin}
                         target="_blank"
                         rel="noopener noreferrer"
+                        startIcon={<Icon>login</Icon>}
                         sx={{
-                            borderColor: M3Colors.surface,
-                            color: M3Colors.surface,
-                            textTransform: "none",
-                            borderRadius: 2,
+                            borderColor: "rgba(255,255,255,0.2)",
+                            color: "#fff",
+                            px: 3,
                             "&:hover": {
-                                borderColor: M3Colors.surfaceHigh,
-                                bgcolor: "rgba(255,255,255,0.1)",
+                                borderColor: "rgba(255,255,255,0.4)",
+                                bgcolor: "rgba(255,255,255,0.06)",
                             },
                         }}
                     >
@@ -108,12 +111,14 @@ export default function Footer() {
                     </Button>
                 </Box>
 
+                {/* App store badges */}
                 <Box
                     sx={{
                         display: "flex",
                         justifyContent: "center",
+                        alignItems: "center",
                         gap: 3,
-                        mb: 4,
+                        mb: 5,
                     }}
                 >
                     <Box
@@ -123,9 +128,11 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         sx={{
                             display: "block",
-                            transition: "transform 0.2s",
+                            transition: "all 0.3s ease",
+                            opacity: 0.8,
                             "&:hover": {
-                                transform: "scale(1.05)",
+                                opacity: 1,
+                                transform: "translateY(-2px)",
                             },
                         }}
                     >
@@ -133,7 +140,7 @@ export default function Footer() {
                             component="img"
                             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                             alt="Download on the App Store"
-                            sx={{ height: 40 }}
+                            sx={{ height: 42 }}
                         />
                     </Box>
                     <Box
@@ -143,9 +150,11 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         sx={{
                             display: "block",
-                            transition: "transform 0.2s",
+                            transition: "all 0.3s ease",
+                            opacity: 0.8,
                             "&:hover": {
-                                transform: "scale(1.05)",
+                                opacity: 1,
+                                transform: "translateY(-2px)",
                             },
                         }}
                     >
@@ -153,16 +162,26 @@ export default function Footer() {
                             component="img"
                             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
                             alt="Get it on Google Play"
-                            sx={{ height: 60, mt: -1.25 }}
+                            sx={{ height: 62, mt: -1.25 }}
                         />
                     </Box>
                 </Box>
 
+                {/* Divider */}
+                <Box
+                    sx={{
+                        height: 1,
+                        bgcolor: "rgba(255,255,255,0.08)",
+                        mb: 3,
+                    }}
+                />
+
+                {/* Copyright */}
                 <Typography
                     sx={{
                         textAlign: "center",
-                        opacity: 0.6,
-                        fontSize: "0.875rem",
+                        opacity: 0.4,
+                        fontSize: "0.85rem",
                     }}
                 >
                     &copy; {new Date().getFullYear()} {BRAND.name}. Powered by{" "}

@@ -7,201 +7,209 @@ import { M3Colors } from "../colors";
 import { CONTACT, URLS } from "../../constants/fitnglow";
 
 export default function ContactSection() {
+    const contactItems = [
+        {
+            icon: "phone",
+            label: "Phone",
+            value: CONTACT.phoneFormatted,
+            href: URLS.call,
+            color: M3Colors.primary,
+        },
+        {
+            icon: "email",
+            label: "Email",
+            value: CONTACT.email,
+            href: URLS.email,
+            color: M3Colors.accent,
+        },
+        {
+            icon: "photo_camera",
+            label: "Instagram",
+            value: `@${CONTACT.instagram}`,
+            href: URLS.instagram,
+            color: "#E1306C",
+            external: true,
+        },
+    ];
+
     return (
         <Box
             sx={{
                 bgcolor: M3Colors.surface,
-                py: { xs: 6, md: 8 },
+                py: { xs: 8, md: 12 },
             }}
         >
-            <Container maxWidth="sm">
-                <Typography
-                    variant="h4"
-                    component="h2"
-                    sx={{
-                        textAlign: "center",
-                        fontWeight: 700,
-                        color: M3Colors.onSurface,
-                        mb: 5,
-                    }}
-                >
-                    Get in Touch
-                </Typography>
-
-                <Box sx={{ mb: 4 }}>
-                    <Box
-                        sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 2,
-                            mb: 2.5,
-                            p: 2,
-                            borderRadius: 2,
-                            bgcolor: M3Colors.surfaceHigh,
-                        }}
-                    >
-                        <Icon sx={{ color: M3Colors.primary, fontSize: 28 }}>phone</Icon>
-                        <Box>
-                            <Typography
-                                variant="body2"
-                                sx={{ color: M3Colors.onSurfaceVariant }}
-                            >
-                                Phone
-                            </Typography>
-                            <Typography
-                                component="a"
-                                href={URLS.call}
-                                sx={{
-                                    color: M3Colors.onSurface,
-                                    fontWeight: 600,
-                                    fontSize: "1.1rem",
-                                    textDecoration: "none",
-                                    "&:hover": {
-                                        color: M3Colors.primary,
-                                    },
-                                }}
-                            >
-                                {CONTACT.phoneFormatted}
-                            </Typography>
-                        </Box>
-                    </Box>
-
-                    <Box
-                        sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 2,
-                            mb: 2.5,
-                            p: 2,
-                            borderRadius: 2,
-                            bgcolor: M3Colors.surfaceHigh,
-                        }}
-                    >
-                        <Icon sx={{ color: M3Colors.primary, fontSize: 28 }}>email</Icon>
-                        <Box>
-                            <Typography
-                                variant="body2"
-                                sx={{ color: M3Colors.onSurfaceVariant }}
-                            >
-                                Email
-                            </Typography>
-                            <Typography
-                                component="a"
-                                href={URLS.email}
-                                sx={{
-                                    color: M3Colors.onSurface,
-                                    fontWeight: 600,
-                                    fontSize: "1.1rem",
-                                    textDecoration: "none",
-                                    "&:hover": {
-                                        color: M3Colors.primary,
-                                    },
-                                }}
-                            >
-                                {CONTACT.email}
-                            </Typography>
-                        </Box>
-                    </Box>
-
-                    <Box
-                        component="a"
-                        href={URLS.instagram}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 2,
-                            p: 2,
-                            borderRadius: 2,
-                            bgcolor: M3Colors.surfaceHigh,
-                            textDecoration: "none",
-                            transition: "all 0.2s",
-                            "&:hover": {
-                                bgcolor: M3Colors.surfaceHighest,
-                            },
-                        }}
-                    >
-                        <Box
-                            component="img"
-                            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-                            alt="Instagram"
-                            sx={{ width: 28, height: 28 }}
-                        />
-                        <Box>
-                            <Typography
-                                variant="body2"
-                                sx={{ color: M3Colors.onSurfaceVariant }}
-                            >
-                                Instagram
-                            </Typography>
-                            <Typography
-                                sx={{
-                                    color: M3Colors.onSurface,
-                                    fontWeight: 600,
-                                    fontSize: "1.1rem",
-                                }}
-                            >
-                                @{CONTACT.instagram}
-                            </Typography>
-                        </Box>
-                    </Box>
-                </Box>
-
+            <Container maxWidth="lg">
                 <Box
                     sx={{
-                        display: "flex",
-                        gap: 2,
-                        flexWrap: "wrap",
+                        display: "grid",
+                        gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                        gap: { xs: 5, md: 8 },
+                        alignItems: "center",
                     }}
                 >
-                    <Button
-                        variant="contained"
-                        size="large"
-                        href={URLS.call}
-                        startIcon={<Icon>phone</Icon>}
-                        sx={{
-                            flex: 1,
-                            minWidth: 140,
-                            bgcolor: M3Colors.primary,
-                            color: "#fff",
-                            py: 1.5,
-                            borderRadius: 3,
-                            textTransform: "none",
-                            fontSize: "1rem",
-                            fontWeight: 600,
-                            "&:hover": {
-                                bgcolor: M3Colors.secondary,
-                            },
-                        }}
-                    >
-                        Call Now
-                    </Button>
-                    <Button
-                        variant="outlined"
-                        size="large"
-                        href={URLS.email}
-                        startIcon={<Icon>email</Icon>}
-                        sx={{
-                            flex: 1,
-                            minWidth: 140,
-                            borderColor: M3Colors.primary,
-                            color: M3Colors.primary,
-                            py: 1.5,
-                            borderRadius: 3,
-                            textTransform: "none",
-                            fontSize: "1rem",
-                            fontWeight: 600,
-                            borderWidth: 2,
-                            "&:hover": {
-                                borderWidth: 2,
-                                borderColor: M3Colors.secondary,
-                                bgcolor: `${M3Colors.primary}10`,
-                            },
-                        }}
-                    >
-                        Send Email
-                    </Button>
+                    {/* Left: Text and CTA */}
+                    <Box>
+                        <Typography
+                            sx={{
+                                color: M3Colors.accent,
+                                fontWeight: 600,
+                                fontSize: "0.9rem",
+                                letterSpacing: 2,
+                                textTransform: "uppercase",
+                                mb: 1.5,
+                            }}
+                        >
+                            Contact Us
+                        </Typography>
+                        <Typography
+                            variant="h3"
+                            component="h2"
+                            sx={{
+                                fontWeight: 700,
+                                color: M3Colors.onSurface,
+                                fontSize: { xs: "1.8rem", md: "2.4rem" },
+                                lineHeight: 1.2,
+                                mb: 2,
+                            }}
+                        >
+                            Ready to Start Your{" "}
+                            <Box component="span" sx={{ color: M3Colors.primary, fontStyle: "italic" }}>
+                                Journey?
+                            </Box>
+                        </Typography>
+                        <Typography
+                            sx={{
+                                color: M3Colors.onSurfaceVariant,
+                                lineHeight: 1.7,
+                                mb: 4,
+                                maxWidth: 420,
+                            }}
+                        >
+                            Reach out today and take the first step towards a healthier, happier you.
+                            We&apos;d love to hear from you.
+                        </Typography>
+
+                        <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
+                            <Button
+                                variant="contained"
+                                size="large"
+                                href={URLS.call}
+                                startIcon={<Icon>phone</Icon>}
+                                sx={{
+                                    bgcolor: M3Colors.primary,
+                                    color: "#fff",
+                                    px: 4,
+                                    py: 1.5,
+                                    boxShadow: `0 8px 30px ${M3Colors.primary}30`,
+                                    "&:hover": {
+                                        bgcolor: M3Colors.primaryDark,
+                                        transform: "translateY(-2px)",
+                                    },
+                                    transition: "all 0.3s ease",
+                                }}
+                            >
+                                Call Now
+                            </Button>
+                            <Button
+                                variant="outlined"
+                                size="large"
+                                href={URLS.email}
+                                startIcon={<Icon>email</Icon>}
+                                sx={{
+                                    borderColor: M3Colors.onSurfaceLight,
+                                    color: M3Colors.onSurface,
+                                    px: 4,
+                                    py: 1.5,
+                                    borderWidth: 1.5,
+                                    "&:hover": {
+                                        borderColor: M3Colors.primary,
+                                        bgcolor: `${M3Colors.primary}08`,
+                                        borderWidth: 1.5,
+                                    },
+                                    transition: "all 0.3s ease",
+                                }}
+                            >
+                                Send Email
+                            </Button>
+                        </Box>
+                    </Box>
+
+                    {/* Right: Contact cards */}
+                    <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                        {contactItems.map((item) => (
+                            <Box
+                                key={item.label}
+                                component="a"
+                                href={item.href}
+                                target={item.external ? "_blank" : undefined}
+                                rel={item.external ? "noopener noreferrer" : undefined}
+                                sx={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 3,
+                                    p: 3,
+                                    borderRadius: 4,
+                                    bgcolor: "#fff",
+                                    border: "1px solid #E8E4DC",
+                                    textDecoration: "none",
+                                    transition: "all 0.3s ease",
+                                    "&:hover": {
+                                        borderColor: item.color,
+                                        boxShadow: `0 10px 40px ${item.color}12`,
+                                        transform: "translateX(4px)",
+                                    },
+                                }}
+                            >
+                                <Box
+                                    sx={{
+                                        width: 52,
+                                        height: 52,
+                                        borderRadius: 3,
+                                        bgcolor: `${item.color}12`,
+                                        display: "flex",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        flexShrink: 0,
+                                    }}
+                                >
+                                    <Icon sx={{ color: item.color, fontSize: 26 }}>
+                                        {item.icon}
+                                    </Icon>
+                                </Box>
+                                <Box>
+                                    <Typography
+                                        sx={{
+                                            color: M3Colors.onSurfaceLight,
+                                            fontSize: "0.8rem",
+                                            fontWeight: 500,
+                                            mb: 0.3,
+                                        }}
+                                    >
+                                        {item.label}
+                                    </Typography>
+                                    <Typography
+                                        sx={{
+                                            color: M3Colors.onSurface,
+                                            fontWeight: 600,
+                                            fontSize: "1.05rem",
+                                        }}
+                                    >
+                                        {item.value}
+                                    </Typography>
+                                </Box>
+                                <Icon
+                                    sx={{
+                                        ml: "auto",
+                                        color: M3Colors.onSurfaceLight,
+                                        fontSize: 20,
+                                    }}
+                                >
+                                    arrow_forward
+                                </Icon>
+                            </Box>
+                        ))}
+                    </Box>
                 </Box>
             </Container>
         </Box>
