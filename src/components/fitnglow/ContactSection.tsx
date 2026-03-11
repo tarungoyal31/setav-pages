@@ -68,9 +68,11 @@ export default function ContactSection() {
                             sx={{
                                 fontWeight: 700,
                                 color: M3Colors.onSurface,
-                                fontSize: { xs: "1.8rem", md: "2.4rem" },
+                                fontSize: { xs: "1.6rem", md: "2.4rem" },
                                 lineHeight: 1.2,
                                 mb: 2,
+                                overflowWrap: "break-word",
+                                wordBreak: "break-word",
                             }}
                         >
                             Ready to Start Your{" "}

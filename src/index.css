@@ -7,8 +7,7 @@
 body {
   margin: 0;
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -45,6 +44,7 @@ a {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInUp {

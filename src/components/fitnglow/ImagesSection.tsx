@@ -87,6 +87,12 @@ export default function ImagesSection({ images }: ImagesSectionProps) {
                         "& .slick-slide": {
                             px: 0,
                         },
+                        "& .slick-list": {
+                            overflow: "hidden",
+                        },
+                        "& .slick-track": {
+                            display: "flex",
+                        },
                     }}
                 >
                     <Slider {...settings}>
