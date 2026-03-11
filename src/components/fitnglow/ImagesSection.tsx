@@ -1,6 +1,9 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { M3Colors } from "../colors";
 import { BRAND } from "../../constants/fitnglow";
 import type { CommonImage } from "../../types/api";
@@ -10,6 +13,20 @@ interface ImagesSectionProps {
 }
 
 export default function ImagesSection({ images }: ImagesSectionProps) {
+    if (images.length === 0) return null;
+
+    const settings = {
+        dots: true,
+        infinite: images.length > 1,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        adaptiveHeight: true,
+    };
+
     return (
         <Box
             sx={{
@@ -58,63 +75,45 @@ export default function ImagesSection({ images }: ImagesSectionProps) {
 
                 <Box
                     sx={{
-                        display: "grid",
-                        gridTemplateColumns: {
-                            xs: "1fr",
-                            md: "1.2fr 0.8fr 1fr",
-                        },
-                        gap: { xs: 3, md: 3 },
-                        maxWidth: 900,
+                        maxWidth: 600,
                         mx: "auto",
+                        "& .slick-dots li button:before": {
+                            color: M3Colors.primary,
+                            fontSize: 10,
+                        },
+                        "& .slick-dots li.slick-active button:before": {
+                            color: M3Colors.primary,
+                        },
+                        "& .slick-slide": {
+                            px: 0,
+                        },
                     }}
                 >
-                    {images.map((image, index) => (
-                        <Box
-                            key={image.url ?? index}
-                            sx={{
-                                position: "relative",
-                                borderRadius: index === 1 ? "60px 20px 60px 20px" : 4,
-                                overflow: "hidden",
-                                aspectRatio: "3/4",
-                                boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
-                                transition: "all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)",
-                                mt: { xs: 0, md: index === 1 ? 5 : 0 },
-                                "&:hover": {
-                                    transform: "translateY(-8px)",
-                                    boxShadow: "0 30px 80px rgba(0,0,0,0.12)",
-                                },
-                            }}
-                        >
-                            <Box
-                                component="img"
-                                src={image.url}
-                                alt={`${BRAND.owner} - Nutritionist ${index + 1}`}
-                                sx={{
-                                    width: "100%",
-                                    height: "100%",
-                                    objectFit: "cover",
-                                    transition: "transform 0.5s ease",
-                                    "&:hover": {
-                                        transform: "scale(1.05)",
-                                    },
-                                }}
-                            />
-                            {/* Gradient overlay */}
-                            <Box
-                                sx={{
-                                    position: "absolute",
-                                    bottom: 0,
-                                    left: 0,
-                                    right: 0,
-                                    height: "40%",
-                                    background: "linear-gradient(to top, rgba(0,0,0,0.3), transparent)",
-                                    opacity: 0,
-                                    transition: "opacity 0.3s ease",
-                                    ".MuiBox-root:hover &": { opacity: 1 },
-                                }}
-                            />
-                        </Box>
-                    ))}
+                    <Slider {...settings}>
+                        {images.map((image, index) => (
+                            <Box key={image.url ?? index}>
+                                <Box
+                                    sx={{
+                                        borderRadius: 4,
+                                        overflow: "hidden",
+                                        boxShadow: "0 20px 60px rgba(0,0,0,0.08)",
+                                    }}
+                                >
+                                    <Box
+                                        component="img"
+                                        src={image.url}
+                                        alt={`${BRAND.owner} - Nutritionist ${index + 1}`}
+                                        sx={{
+                                            width: "100%",
+                                            height: "auto",
+                                            display: "block",
+                                            objectFit: "contain",
+                                        }}
+                                    />
+                                </Box>
+                            </Box>
+                        ))}
+                    </Slider>
                 </Box>
             </Container>
         </Box>

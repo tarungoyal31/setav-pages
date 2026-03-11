@@ -5,7 +5,7 @@ import type {
     PageData,
 } from "../types/api";
 
-const API_BASE = "https://api.setav.in";
+const API_BASE = import.meta.env.DEV ? "/api" : "https://api.setav.in";
 const GROUP_ID = "2";
 
 async function fetchJson<T>(url: string): Promise<T> {

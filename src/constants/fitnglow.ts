@@ -15,12 +15,11 @@ export const CONTACT = {
 };
 
 export const URLS = {
-    bookAppointment: "https://app.setav.ai/#/g/2/services",
-    productDetails: "https://app.setav.ai/#/g/2/services/details/1",
+    bookAppointment: "https://setav.ai/g/2",
     call: `tel:${CONTACT.phone}`,
     email: `mailto:${CONTACT.email}`,
     instagram: "https://www.instagram.com/fit_and_glow__",
-    setavLogin: "https://app.setav.ai",
+    setavLogin: "https://setav.ai",
     appStore: "https://apps.apple.com/in/app/setav/id6738992536",
     playStore: "https://play.google.com/store/apps/details?id=ai.setav.customer",
 };
@@ -112,7 +111,7 @@ export const PRICING_PLANS = [
             "Healthy Cooking Tips",
         ],
         highlight: "Lose up to 4 kgs in a month",
-        url: "https://app.setav.ai/#/g/2/services/details/1",
+        url: "https://setav.ai/g/2/services/details/1",
     },
     {
         id: "2",
@@ -126,7 +125,7 @@ export const PRICING_PLANS = [
             "Healthy Cooking Tips",
         ],
         highlight: "Lose up to 7-9 kgs",
-        url: "https://app.setav.ai/#/g/2/services/details/2",
+        url: "https://setav.ai/g/2/services/details/2",
         popular: true,
     },
 ];

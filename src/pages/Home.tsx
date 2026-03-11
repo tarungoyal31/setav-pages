@@ -115,7 +115,7 @@ export default function Home() {
 
     return (
         <Box>
-            <HeroSection />
+            <HeroSection profileImage={data.linkInfo.info_group.image} />
             <ImagesSection images={images} />
             <WhyUsSection />
             <ServicesSection />

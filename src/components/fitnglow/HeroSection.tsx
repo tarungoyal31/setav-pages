@@ -4,9 +4,13 @@ import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Icon from "@mui/material/Icon";
 import { M3Colors } from "../colors";
-import { BRAND, URLS, IMAGES } from "../../constants/fitnglow";
+import { BRAND, URLS } from "../../constants/fitnglow";
 
-export default function HeroSection() {
+interface HeroSectionProps {
+    profileImage?: string;
+}
+
+export default function HeroSection({ profileImage }: HeroSectionProps) {
     return (
         <Box
             sx={{
@@ -247,7 +251,7 @@ export default function HeroSection() {
                             />
                             <Box
                                 component="img"
-                                src={IMAGES.provider[0]}
+                                src={profileImage}
                                 alt={`${BRAND.owner} - Certified Nutritionist`}
                                 sx={{
                                     width: "100%",

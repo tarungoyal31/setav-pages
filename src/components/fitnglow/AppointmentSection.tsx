@@ -24,9 +24,6 @@ function getCurrency(currency?: string): string {
 export default function AppointmentSection({ products }: AppointmentSectionProps) {
     if (products.length === 0) return null;
 
-    // Mark the last product as popular if more than one
-    const popularIndex = products.length > 1 ? products.length - 1 : -1;
-
     return (
         <Box
             sx={{
@@ -84,13 +81,12 @@ export default function AppointmentSection({ products }: AppointmentSectionProps
                         alignItems: "start",
                     }}
                 >
-                    {products.map((product, index) => {
-                        const isPopular = index === popularIndex;
+                    {products.map((product) => {
                         const priceUnits = product.price?.units;
                         const isFree = priceUnits == null || priceUnits === 0;
                         const priceDisplay = formatPrice(priceUnits);
                         const currencySymbol = isFree ? "" : getCurrency(product.price?.currency);
-                        const bookingUrl = `https://app.setav.ai/#/g/${product.group_id}/services/details/${product.id}`;
+                        const bookingUrl = `https://setav.ai/g/${product.group_id}/services/details/${product.id}`;
 
                         return (
                             <Box
@@ -99,40 +95,16 @@ export default function AppointmentSection({ products }: AppointmentSectionProps
                                     bgcolor: "#fff",
                                     borderRadius: 5,
                                     overflow: "hidden",
-                                    border: isPopular
-                                        ? `2px solid ${M3Colors.primary}`
-                                        : "1px solid #E8E4DC",
+                                    border: "1px solid #E8E4DC",
                                     position: "relative",
                                     transition: "all 0.4s ease",
-                                    transform: isPopular ? { md: "scale(1.04)" } : "none",
-                                    boxShadow: isPopular
-                                        ? `0 20px 60px ${M3Colors.primary}15`
-                                        : "0 4px 20px rgba(0,0,0,0.04)",
+                                    boxShadow: "0 4px 20px rgba(0,0,0,0.04)",
                                     "&:hover": {
-                                        transform: isPopular
-                                            ? { md: "scale(1.06)" }
-                                            : "translateY(-6px)",
+                                        transform: "translateY(-6px)",
                                         boxShadow: `0 24px 70px ${M3Colors.primary}18`,
                                     },
                                 }}
                             >
-                                {isPopular && (
-                                    <Box
-                                        sx={{
-                                            bgcolor: M3Colors.primary,
-                                            color: "#fff",
-                                            textAlign: "center",
-                                            py: 1,
-                                            fontSize: "0.8rem",
-                                            fontWeight: 700,
-                                            letterSpacing: 1.5,
-                                            textTransform: "uppercase",
-                                        }}
-                                    >
-                                        Most Popular
-                                    </Box>
-                                )}
-
                                 <Box sx={{ p: { xs: 3.5, md: 4.5 } }}>
                                     <Typography
                                         sx={{
@@ -208,33 +180,28 @@ export default function AppointmentSection({ products }: AppointmentSectionProps
                                     )}
 
                                     <Button
-                                        variant={isPopular ? "contained" : "outlined"}
+                                        variant="outlined"
                                         fullWidth
                                         size="large"
                                         href={bookingUrl}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         sx={{
-                                            bgcolor: isPopular ? M3Colors.primary : "transparent",
-                                            color: isPopular ? "#fff" : M3Colors.primary,
-                                            borderColor: isPopular ? M3Colors.primary : M3Colors.onSurfaceLight,
+                                            bgcolor: "transparent",
+                                            color: M3Colors.primary,
+                                            borderColor: M3Colors.onSurfaceLight,
                                             py: 1.8,
                                             fontSize: "1rem",
                                             fontWeight: 700,
-                                            boxShadow: isPopular
-                                                ? `0 8px 30px ${M3Colors.primary}30`
-                                                : "none",
                                             "&:hover": {
-                                                bgcolor: isPopular
-                                                    ? M3Colors.primaryDark
-                                                    : `${M3Colors.primary}08`,
+                                                bgcolor: `${M3Colors.primary}08`,
                                                 borderColor: M3Colors.primary,
                                                 transform: "translateY(-2px)",
                                             },
                                             transition: "all 0.3s ease",
                                         }}
                                     >
-                                        {isFree ? "Book Now" : isPopular ? "Get Started" : "Choose Plan"}
+                                        {isFree ? "Book Now" : "Choose Plan"}
                                     </Button>
                                 </Box>
                             </Box>
