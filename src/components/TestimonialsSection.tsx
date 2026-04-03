@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
             .finally(() => setLoaded(true));
     }, []);
 
-    if (!loaded || testimonials.length === 0) return null;
+    if (loaded && testimonials.length === 0) return null;
 
     return (
         <Box
