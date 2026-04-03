@@ -5,6 +5,9 @@ frontend:
       commands:
         - nvm install 22
         - nvm use 22
+        - node -v && npm -v
+        - ls -la package-lock.json
+        - rm -rf node_modules
         - npm ci
     build:
       commands:
@@ -16,4 +19,3 @@ frontend:
   cache:
     paths:
       - .npm/**/*
-      - node_modules/**/*
