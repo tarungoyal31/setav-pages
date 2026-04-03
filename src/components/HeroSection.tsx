@@ -1,147 +1,227 @@
-import Avatar from "@mui/material/Avatar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import { palette } from "./colors";
 import { SITE_DATA } from "../data/siteData";
-import { M3Colors } from "./colors";
+import { useScrollReveal } from "../hooks/useScrollReveal";
+
+const CREDENTIAL_TAGS = [
+    "IIT Roorkee",
+    "Ex-Google",
+    "Ex-Walmart",
+    "Ex-Zomato",
+    "ACM ICPC",
+    "10+ Years",
+];
 
 export default function HeroSection() {
+    const ref = useScrollReveal<HTMLDivElement>();
+
     return (
         <Box
+            ref={ref}
+            className="grain"
             sx={{
-                minHeight: { xs: "auto", md: "100vh" },
+                position: "relative",
+                minHeight: "100vh",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                background: `linear-gradient(135deg, ${M3Colors.primary} 0%, #0D47A1 100%)`,
-                color: "#fff",
-                py: { xs: 8, md: 0 },
+                bgcolor: palette.dark,
+                color: palette.textOnDark,
+                overflow: "hidden",
                 px: { xs: 2, md: 4 },
             }}
         >
+            {/* Subtle radial glow behind profile */}
             <Box
                 sx={{
-                    maxWidth: 1200,
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    width: { xs: 400, md: 700 },
+                    height: { xs: 400, md: 700 },
+                    borderRadius: "50%",
+                    background: `radial-gradient(circle, ${palette.accentGlow} 0%, transparent 70%)`,
+                    filter: "blur(60px)",
+                    pointerEvents: "none",
+                    zIndex: 0,
+                }}
+            />
+
+            <Box
+                sx={{
+                    position: "relative",
+                    zIndex: 1,
+                    maxWidth: 1000,
                     mx: "auto",
-                    width: "100%",
-                    display: "flex",
-                    flexDirection: { xs: "column", md: "row" },
-                    alignItems: "center",
-                    gap: { xs: 4, md: 8 },
+                    textAlign: "center",
+                    py: { xs: 14, md: 4 },
+                pt: { xs: 16, md: 14 },
                 }}
             >
-                <Box
-                    sx={{
-                        flex: 1,
-                        textAlign: { xs: "center", md: "left" },
-                        order: { xs: 2, md: 1 },
-                    }}
-                >
-                    <Typography
-                        variant="h6"
-                        sx={{
-                            fontWeight: 400,
-                            opacity: 0.9,
-                            mb: 1,
-                            letterSpacing: 1,
-                        }}
-                    >
-                        {SITE_DATA.name}
-                    </Typography>
-                    <Typography
-                        variant="h2"
-                        component="h1"
-                        sx={{
-                            fontWeight: 700,
-                            fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" },
-                            lineHeight: 1.2,
-                            mb: 2,
-                        }}
-                    >
-                        {SITE_DATA.tagline}
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        sx={{
-                            fontWeight: 400,
-                            opacity: 0.85,
-                            mb: 4,
-                            fontSize: { xs: "1rem", md: "1.15rem" },
-                            lineHeight: 1.6,
-                        }}
-                    >
-                        {SITE_DATA.subtitle}
-                    </Typography>
-                    <Stack
-                        direction={{ xs: "column", sm: "row" }}
-                        spacing={2}
-                        justifyContent={{ xs: "center", md: "flex-start" }}
-                    >
-                        <Button
-                            variant="contained"
-                            size="large"
-                            startIcon={<CalendarMonthIcon />}
-                            href={SITE_DATA.urls.bookAppointment}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            sx={{
-                                bgcolor: "#fff",
-                                color: M3Colors.primary,
-                                fontWeight: 600,
-                                px: 4,
-                                py: 1.5,
-                                borderRadius: 2,
-                                "&:hover": {
-                                    bgcolor: "rgba(255,255,255,0.9)",
-                                },
-                            }}
-                        >
-                            Book a Session
-                        </Button>
-                        <Button
-                            variant="outlined"
-                            size="large"
-                            href="#contact"
-                            sx={{
-                                borderColor: "rgba(255,255,255,0.6)",
-                                color: "#fff",
-                                fontWeight: 600,
-                                px: 4,
-                                py: 1.5,
-                                borderRadius: 2,
-                                "&:hover": {
-                                    borderColor: "#fff",
-                                    bgcolor: "rgba(255,255,255,0.1)",
-                                },
-                            }}
-                        >
-                            Get in Touch
-                        </Button>
-                    </Stack>
-                </Box>
-                <Box
-                    sx={{
-                        order: { xs: 1, md: 2 },
-                        display: "flex",
-                        justifyContent: "center",
-                    }}
-                >
-                    <Avatar
+                {/* Profile image */}
+                <Box className="reveal" sx={{ mb: 4 }}>
+                    <Box
+                        component="img"
                         src={SITE_DATA.profileImage}
                         alt={SITE_DATA.name}
                         sx={{
-                            width: { xs: 160, md: 240 },
-                            height: { xs: 160, md: 240 },
-                            border: "4px solid rgba(255,255,255,0.3)",
-                            boxShadow: "0 8px 32px rgba(0,0,0,0.2)",
+                            width: { xs: 100, md: 120 },
+                            height: { xs: 100, md: 120 },
+                            borderRadius: "50%",
+                            objectFit: "cover",
+                            border: `2px solid rgba(255,255,255,0.15)`,
+                        }}
+                    />
+                </Box>
+
+                {/* Name + Title */}
+                <Typography
+                    className="reveal reveal-delay-1"
+                    sx={{
+                        fontSize: { xs: "0.85rem", md: "0.95rem" },
+                        fontWeight: 500,
+                        color: palette.textOnDarkMuted,
+                        letterSpacing: "0.12em",
+                        textTransform: "uppercase",
+                        mb: 2,
+                    }}
+                >
+                    {SITE_DATA.profession}
+                </Typography>
+
+                {/* Tagline - large display text */}
+                <Typography
+                    className="reveal reveal-delay-2"
+                    variant="h1"
+                    sx={{
+                        fontSize: {
+                            xs: "2.5rem",
+                            sm: "3.5rem",
+                            md: "4.5rem",
+                            lg: "5.5rem",
+                        },
+                        maxWidth: 900,
+                        mx: "auto",
+                        mb: 3,
+                    }}
+                >
+                    {SITE_DATA.tagline}
+                </Typography>
+
+                {/* Subtitle */}
+                <Typography
+                    className="reveal reveal-delay-3"
+                    sx={{
+                        fontSize: { xs: "1rem", md: "1.15rem" },
+                        color: palette.textOnDarkMuted,
+                        maxWidth: 600,
+                        mx: "auto",
+                        mb: 4,
+                        lineHeight: 1.7,
+                    }}
+                >
+                    Founder of Setav Innovations. Leveraging a decade of
+                    experience at Google, Walmart & Zomato to build the future
+                    of professional networking.
+                </Typography>
+
+                {/* Credential tags */}
+                <Stack
+                    className="reveal reveal-delay-3"
+                    direction="row"
+                    spacing={1}
+                    flexWrap="wrap"
+                    justifyContent="center"
+                    useFlexGap
+                    sx={{ mb: 5 }}
+                >
+                    {CREDENTIAL_TAGS.map((tag) => (
+                        <Box
+                            key={tag}
+                            sx={{
+                                px: 2,
+                                py: 0.6,
+                                borderRadius: 999,
+                                border: "1px solid rgba(255,255,255,0.12)",
+                                fontSize: "0.8rem",
+                                fontWeight: 500,
+                                color: "rgba(255,255,255,0.65)",
+                                whiteSpace: "nowrap",
+                            }}
+                        >
+                            {tag}
+                        </Box>
+                    ))}
+                </Stack>
+
+                {/* CTAs */}
+                <Stack
+                    className="reveal reveal-delay-4"
+                    direction={{ xs: "column", sm: "row" }}
+                    spacing={2}
+                    justifyContent="center"
+                    alignItems="center"
+                >
+                    <Button
+                        variant="contained"
+                        size="large"
+                        endIcon={<ArrowOutwardIcon sx={{ fontSize: 18 }} />}
+                        href={SITE_DATA.urls.bookAppointment}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        sx={{
+                            bgcolor: "#fff",
+                            color: palette.dark,
+                            px: 4,
+                            py: 1.5,
+                            fontSize: "0.95rem",
+                            "&:hover": {
+                                bgcolor: "rgba(255,255,255,0.9)",
+                            },
+                            boxShadow: "none",
                         }}
                     >
-                        TG
-                    </Avatar>
-                </Box>
+                        Book a Session
+                    </Button>
+                    <Button
+                        variant="outlined"
+                        size="large"
+                        href="#contact"
+                        sx={{
+                            borderColor: "rgba(255,255,255,0.2)",
+                            color: "#fff",
+                            px: 4,
+                            py: 1.5,
+                            fontSize: "0.95rem",
+                            "&:hover": {
+                                borderColor: "rgba(255,255,255,0.5)",
+                                bgcolor: "rgba(255,255,255,0.05)",
+                            },
+                        }}
+                    >
+                        Get in Touch
+                    </Button>
+                </Stack>
             </Box>
+
+            {/* Bottom gradient fade */}
+            <Box
+                sx={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    right: 0,
+                    height: 120,
+                    background: `linear-gradient(to top, ${palette.white}, transparent)`,
+                    pointerEvents: "none",
+                    zIndex: 2,
+                }}
+            />
         </Box>
     );
 }

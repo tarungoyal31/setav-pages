@@ -31,7 +31,6 @@ This is a website for a service provider. Service provider details are added in 
 ## Section
 - Hero
   - Title: Tagline for service provider
-  - Heero image add a placeholder to be generated later.
 - Images section
   - Images uploaded by service provider
 - Why us section
@@ -54,4 +53,3 @@ Change deploy to generate og:image from Hero section
 
 # Notes
 - Create / use placeholder favicon for the website.
-- Crate banner image placeholder to be generated later.

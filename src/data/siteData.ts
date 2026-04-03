@@ -16,8 +16,8 @@ export const SITE_DATA = {
         "10+ years at Google, Walmart & Zomato. IIT Roorkee alumnus. Founder of Setav Innovations.",
 
     urls: {
-        bookAppointment: "https://app.setav.ai/#/g/1/services",
-        loginSetav: "https://app.setav.ai",
+        bookAppointment: "https://setav.ai/g/1/services",
+        loginSetav: "https://setav.ai",
         appStore: "https://apps.apple.com/in/app/setav/id6738992536",
         playStore:
             "https://play.google.com/store/apps/details?id=ai.setav.customer",
@@ -80,6 +80,8 @@ export const SITE_DATA = {
     ],
 };
 
+// --- API types and fetchers ---
+
 export interface AppointmentProduct {
     id: string;
     name: string;
@@ -92,37 +94,75 @@ export interface AppointmentProduct {
     bookingUrl: string;
 }
 
-export const APPOINTMENT_PRODUCTS: AppointmentProduct[] = [
-    {
-        id: "15",
-        name: "Introduction",
-        description: "Get in touch to know about Setav",
-        durationMinutes: 10,
-        priceDisplay: "Free",
-        priceUnits: 0,
-        isFree: true,
-        bookingUrl: "https://app.setav.ai/#/g/1/services/details/15",
-    },
-    {
-        id: "16",
-        name: "Android Architecture Review",
-        description: "Get your Android architecture reviewed.",
-        additionalInformation:
-            "Get your Android app architecture reviewed and get insights based on my 10+ years of experience.",
-        durationMinutes: 30,
-        priceDisplay: "\u20B92,100",
-        priceUnits: 2100,
-        isFree: false,
-        bookingUrl: "https://app.setav.ai/#/g/1/services/details/16",
-    },
-    {
-        id: "17",
-        name: "DS Algorithms Mock Interview",
-        description: "Get your mock interview scheduled with me",
-        durationMinutes: 45,
-        priceDisplay: "\u20B95,100",
-        priceUnits: 5100,
-        isFree: false,
-        bookingUrl: "https://app.setav.ai/#/g/1/services/details/17",
-    },
-];
+interface ApiPrice {
+    units: number;
+    display_string: string;
+}
+
+interface ApiProduct {
+    id: string;
+    group_id: string;
+    name: string;
+    description: string;
+    additional_information?: string;
+    duration_in_sec: number;
+    is_active: boolean;
+    price: ApiPrice;
+}
+
+export async function fetchAppointmentProducts(): Promise<AppointmentProduct[]> {
+    const res = await fetch(
+        `https://api.setav.in/user/appointment/product/group/${SITE_DATA.groupId}`
+    );
+    const data = await res.json();
+    return (data.products as ApiProduct[])
+        .filter((p) => p.is_active)
+        .map((p) => ({
+            id: p.id,
+            name: p.name,
+            description: p.description,
+            additionalInformation: p.additional_information,
+            durationMinutes: Math.round(p.duration_in_sec / 60),
+            priceDisplay: p.price.units === 0 ? "Free" : p.price.display_string,
+            priceUnits: p.price.units,
+            isFree: p.price.units === 0,
+            bookingUrl: `https://setav.ai/g/${SITE_DATA.groupId}/services/details/${p.id}`,
+        }));
+}
+
+export interface Testimonial {
+    id: string;
+    authorName: string;
+    authorImage: string;
+    title: string;
+    description: string;
+    starRating: number;
+}
+
+interface ApiTestimonialAuthor {
+    name: string;
+    image: string;
+}
+
+interface ApiTestimonial {
+    id: string;
+    author: ApiTestimonialAuthor;
+    title: string;
+    description: string;
+    star_rating: number;
+}
+
+export async function fetchTestimonials(): Promise<Testimonial[]> {
+    const res = await fetch(
+        `https://api.setav.in/user/testimonial/group/${SITE_DATA.groupId}/starred`
+    );
+    const data = await res.json();
+    return (data.testimonials as ApiTestimonial[]).map((t) => ({
+        id: t.id,
+        authorName: t.author.name,
+        authorImage: t.author.image,
+        title: t.title,
+        description: t.description,
+        starRating: t.star_rating,
+    }));
+}

@@ -7,64 +7,74 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AppleIcon from "@mui/icons-material/Apple";
 import ShopIcon from "@mui/icons-material/Shop";
 import { SITE_DATA } from "../data/siteData";
-import { M3Colors } from "./colors";
+import { palette } from "./colors";
 
 export default function FooterSection() {
     return (
         <Box
             component="footer"
             sx={{
-                bgcolor: M3Colors.onSurface,
-                color: "#fff",
-                py: 5,
+                bgcolor: palette.light,
+                py: { xs: 5, md: 6 },
                 px: { xs: 2, md: 4 },
+                borderTop: `1px solid ${palette.borderLight}`,
             }}
         >
             <Box sx={{ maxWidth: 1200, mx: "auto" }}>
                 <Stack
                     direction={{ xs: "column", md: "row" }}
                     justifyContent="space-between"
-                    alignItems="center"
-                    spacing={3}
+                    alignItems={{ xs: "center", md: "flex-start" }}
+                    spacing={4}
                 >
+                    {/* Left — Brand */}
                     <Box sx={{ textAlign: { xs: "center", md: "left" } }}>
                         <Typography
-                            variant="h6"
-                            sx={{ fontWeight: 600, mb: 0.5 }}
+                            sx={{
+                                fontWeight: 700,
+                                fontSize: "1.05rem",
+                                color: palette.text,
+                                mb: 0.5,
+                            }}
                         >
                             {SITE_DATA.name}
                         </Typography>
                         <Typography
-                            variant="body2"
-                            sx={{ opacity: 0.7 }}
+                            sx={{
+                                fontSize: "0.85rem",
+                                color: palette.textMuted,
+                            }}
                         >
                             {SITE_DATA.profession}
                         </Typography>
                     </Box>
 
-                    <Stack direction="row" spacing={1} alignItems="center">
+                    {/* Center — Social + download */}
+                    <Stack
+                        direction="row"
+                        spacing={3}
+                        alignItems="center"
+                    >
                         <IconButton
                             href={SITE_DATA.linkedIn}
                             target="_blank"
                             rel="noopener noreferrer"
-                            sx={{ color: "#fff" }}
                             aria-label="LinkedIn"
+                            sx={{
+                                color: palette.textMuted,
+                                border: `1px solid ${palette.borderLight}`,
+                                width: 40,
+                                height: 40,
+                                "&:hover": {
+                                    color: palette.text,
+                                    borderColor: palette.text,
+                                },
+                                transition: "all 0.3s",
+                            }}
                         >
-                            <LinkedInIcon />
+                            <LinkedInIcon sx={{ fontSize: 20 }} />
                         </IconButton>
-                    </Stack>
 
-                    <Stack
-                        direction="row"
-                        spacing={2}
-                        alignItems="center"
-                    >
-                        <Typography
-                            variant="body2"
-                            sx={{ opacity: 0.7, mr: 1 }}
-                        >
-                            Download Setav
-                        </Typography>
                         <Link
                             href={SITE_DATA.urls.appStore}
                             target="_blank"
@@ -73,15 +83,17 @@ export default function FooterSection() {
                                 display: "flex",
                                 alignItems: "center",
                                 gap: 0.5,
-                                color: "#fff",
-                                opacity: 0.8,
-                                "&:hover": { opacity: 1 },
-                                fontSize: "0.85rem",
+                                color: palette.textMuted,
+                                fontSize: "0.82rem",
+                                fontWeight: 500,
+                                "&:hover": { color: palette.text },
+                                transition: "color 0.3s",
                             }}
                         >
-                            <AppleIcon sx={{ fontSize: 20 }} />
+                            <AppleIcon sx={{ fontSize: 18 }} />
                             App Store
                         </Link>
+
                         <Link
                             href={SITE_DATA.urls.playStore}
                             target="_blank"
@@ -90,26 +102,28 @@ export default function FooterSection() {
                                 display: "flex",
                                 alignItems: "center",
                                 gap: 0.5,
-                                color: "#fff",
-                                opacity: 0.8,
-                                "&:hover": { opacity: 1 },
-                                fontSize: "0.85rem",
+                                color: palette.textMuted,
+                                fontSize: "0.82rem",
+                                fontWeight: 500,
+                                "&:hover": { color: palette.text },
+                                transition: "color 0.3s",
                             }}
                         >
-                            <ShopIcon sx={{ fontSize: 20 }} />
+                            <ShopIcon sx={{ fontSize: 18 }} />
                             Play Store
                         </Link>
                     </Stack>
                 </Stack>
 
+                {/* Bottom */}
                 <Typography
-                    variant="body2"
                     sx={{
                         textAlign: "center",
-                        opacity: 0.5,
-                        mt: 4,
+                        fontSize: "0.78rem",
+                        color: palette.textMuted,
+                        mt: 5,
                         pt: 3,
-                        borderTop: "1px solid rgba(255,255,255,0.1)",
+                        borderTop: `1px solid ${palette.borderLight}`,
                     }}
                 >
                     Powered by{" "}
@@ -117,7 +131,11 @@ export default function FooterSection() {
                         href={SITE_DATA.website}
                         target="_blank"
                         rel="noopener noreferrer"
-                        sx={{ color: "#fff", opacity: 0.8 }}
+                        sx={{
+                            color: palette.accent,
+                            fontWeight: 500,
+                            "&:hover": { textDecoration: "underline" },
+                        }}
                     >
                         Setav
                     </Link>
