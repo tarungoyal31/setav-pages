@@ -1,14 +1,11 @@
-version: 2
+version: 1
 frontend:
   phases:
     preBuild:
       commands:
         - nvm install 22
         - nvm use 22
-        - node -v && npm -v
-        - ls -la package-lock.json
-        - rm -rf node_modules
-        - npm ci
+        - npm install
     build:
       commands:
         - npm run build
@@ -18,4 +15,4 @@ frontend:
       - '**/*'
   cache:
     paths:
-      - .npm/**/*
+      - node_modules/**/*
