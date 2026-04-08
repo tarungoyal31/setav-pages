@@ -57,7 +57,7 @@ export const siteInfo: SiteInfo = {
     name: "Sanjay Prasad",
     image: "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-1733041092-1000059295.jpg",
     profession: { name: "Astrologer", type: "astrologer" },
-    about: "Astrology,Numerology,Vaastu  Consultation",
+    about: "Astrology, Numerology, Vaastu Consultation",
     public_link: "sanjayprasad",
     infos: [
       { id: "0", name: "Full Name", value: "Sanjay Prasad", config_type: "full_name", icon: "icon_person" },
@@ -97,10 +97,10 @@ export const siteInfo: SiteInfo = {
       {
         id: "6",
         name: "Website",
-        value: "http://www.youtube.com/@turningpoint888astrology",
+        value: "https://www.youtube.com/@turningpoint888astrology",
         config_type: "website",
         icon: "icon_website",
-        link_address: "http://www.youtube.com/@turningpoint888astrology",
+        link_address: "https://www.youtube.com/@turningpoint888astrology",
       },
       {
         id: "7",

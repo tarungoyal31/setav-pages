@@ -23,7 +23,7 @@ TEL:${getPhoneNumber()}
 EMAIL:${getEmail()}
 TITLE:${info.profession.name}
 ADR:;;${address?.google_location?.formatted_address || "Malviya Nagar, New Delhi"}
-URL:https://app.setav.ai/#/g/${info.id}
+URL:https://setav.ai/g/${info.id}
 END:VCARD`;
 
   const blob = new Blob([vcard], { type: "text/vcard" });
