@@ -138,6 +138,7 @@ export default function Contact() {
                 size="small"
                 href={item.href}
                 target={item.label === "Address" ? "_blank" : undefined}
+                rel={item.label === "Address" ? "noopener noreferrer" : undefined}
                 sx={{
                   borderColor: M3Colors.primary,
                   color: M3Colors.primary,

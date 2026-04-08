@@ -41,6 +41,7 @@ export default function Footer() {
             <IconButton
               href={getInstagramUrl()}
               target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 color: "white",
                 "&:hover": { bgcolor: "rgba(255,255,255,0.1)" },
@@ -51,6 +52,7 @@ export default function Footer() {
             <IconButton
               href={getYouTubeUrl()}
               target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 color: "white",
                 "&:hover": { bgcolor: "rgba(255,255,255,0.1)" },
@@ -79,6 +81,7 @@ export default function Footer() {
                 startIcon={<AppleIcon />}
                 href={getAppStoreUrl()}
                 target="_blank"
+              rel="noopener noreferrer"
                 sx={{
                   color: "white",
                   borderColor: "rgba(255,255,255,0.5)",
@@ -104,6 +107,7 @@ export default function Footer() {
                 }
                 href={getPlayStoreUrl()}
                 target="_blank"
+              rel="noopener noreferrer"
                 sx={{
                   color: "white",
                   borderColor: "rgba(255,255,255,0.5)",
@@ -137,6 +141,7 @@ export default function Footer() {
               component="a"
               href="https://setav.ai"
               target="_blank"
+              rel="noopener noreferrer"
               sx={{ color: "rgba(255,255,255,0.6)", textDecoration: "none" }}
             >
               Setav

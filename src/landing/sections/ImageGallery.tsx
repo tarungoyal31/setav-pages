@@ -12,6 +12,51 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { siteInfo } from "../data/info";
 import { M3Colors } from "../../components/colors";
 
+function GalleryImage({ url, index, height }: { url: string; index: number; height: string }) {
+  return (
+    <div
+      style={{
+        width: "100%",
+        height,
+        borderRadius: 8,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundImage: `url(${url})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        filter: "none",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: `url(${url})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          filter: "blur(20px) brightness(0.7)",
+          transform: "scale(1.1)",
+        }}
+      />
+      <img
+        src={url}
+        alt={`Gallery image ${index + 1}`}
+        loading="lazy"
+        style={{
+          position: "relative",
+          maxWidth: "100%",
+          maxHeight: "100%",
+          objectFit: "contain",
+          borderRadius: 8,
+        }}
+      />
+    </div>
+  );
+}
+
 export default function ImageGallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -135,16 +180,10 @@ export default function ImageGallery() {
                       },
                     }}
                   >
-                    <img
-                      src={image.url}
-                      alt={`Gallery image ${index + 1}`}
-                      loading="lazy"
-                      style={{
-                        width: "100%",
-                        height: isMobile ? "280px" : "320px",
-                        objectFit: "cover",
-                        borderRadius: 8,
-                      }}
+                    <GalleryImage
+                      url={image.url}
+                      index={index}
+                      height={isMobile ? "280px" : "320px"}
                     />
                   </Box>
                 ))}

@@ -1,11 +1,11 @@
 # Makefile
 
-.PHONY: run_local build start_local_server swag_gen deploy preview og-image
+.PHONY: run_local build start_local_server swag_gen deploy preview og-image fetch-youtube
 
-run_local:
-	npm start
+fetch-youtube:
+	node scripts/fetch-youtube-videos.mjs
 
-build:
+build: fetch-youtube
 	npm run build
 
 start_local_server:

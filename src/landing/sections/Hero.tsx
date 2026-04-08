@@ -77,6 +77,7 @@ export default function Hero() {
               size="large"
               href={getBookingUrl()}
               target="_blank"
+              rel="noopener noreferrer"
               sx={{
                 bgcolor: "white",
                 color: M3Colors.primary,

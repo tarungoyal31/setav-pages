@@ -144,7 +144,7 @@ I offer simple, cost-free remedies, believing that service to those in distress 
 export const getPhoneNumber = () => "+919810895239";
 export const getEmail = () => "sanjayprasadsp2314@gmail.com";
 export const getGroupId = () => "14";
-export const getBookingUrl = () => `https://app.setav.ai/#/g/${getGroupId()}`;
+export const getBookingUrl = () => `https://setav.ai/g/${getGroupId()}`;
 export const getInstagramUrl = () => "https://www.instagram.com/turning.point.888.astrology";
 export const getYouTubeUrl = () => "https://www.youtube.com/@turningpoint888astrology";
 export const getAppStoreUrl = () => "https://apps.apple.com/in/app/setav/id6738992536";

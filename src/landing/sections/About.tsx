@@ -1,8 +1,10 @@
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Paper from "@mui/material/Paper";
+import Button from "@mui/material/Button";
 import { aboutText } from "../data/info";
 import { M3Colors } from "../../components/colors";
 
@@ -13,6 +15,8 @@ const highlights = [
 ];
 
 export default function About() {
+  const [expanded, setExpanded] = useState(false);
+
   return (
     <Box sx={{ py: { xs: 6, md: 8 }, bgcolor: M3Colors.surface }}>
       <Container maxWidth="md">
@@ -63,16 +67,37 @@ export default function About() {
           ))}
         </Stack>
 
-        <Typography
-          sx={{
-            color: M3Colors.onSurface,
-            lineHeight: 1.8,
-            fontSize: "1.05rem",
-            whiteSpace: "pre-line",
-          }}
-        >
-          {aboutText}
-        </Typography>
+        <Box sx={{ position: "relative" }}>
+          <Typography
+            sx={{
+              color: M3Colors.onSurface,
+              lineHeight: 1.8,
+              fontSize: "1.05rem",
+              whiteSpace: "pre-line",
+              ...(!expanded && {
+                display: "-webkit-box",
+                WebkitLineClamp: 6,
+                WebkitBoxOrient: "vertical",
+                overflow: "hidden",
+              }),
+            }}
+          >
+            {aboutText}
+          </Typography>
+          <Button
+            onClick={() => setExpanded(!expanded)}
+            sx={{
+              display: "block",
+              mx: "auto",
+              mt: 1,
+              color: M3Colors.primary,
+              textTransform: "none",
+              fontWeight: 600,
+            }}
+          >
+            {expanded ? "View Less" : "View More"}
+          </Button>
+        </Box>
       </Container>
     </Box>
   );

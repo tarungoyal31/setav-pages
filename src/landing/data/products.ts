@@ -17,55 +17,33 @@ export interface Product {
   strike_price: Price;
 }
 
-export const products: Product[] = [
-  {
-    id: "7",
-    group_id: "14",
-    name: "Vedic Astrology",
-    description: "30 mins session of vedic astrology",
-    appointment_type: 1,
-    duration_in_sec: 1800,
-    is_active: true,
-    price: { currency: "INR", units: 2100, sub_units: 0, display_string: "₹ 2,100" },
-    strike_price: { currency: "INR", units: 0, sub_units: 0, display_string: "₹ 0" },
-  },
-  {
-    id: "8",
-    group_id: "14",
-    name: "Vedic Astrology",
-    description: "1 hr session of Vedic astrology",
-    appointment_type: 1,
-    duration_in_sec: 3600,
-    is_active: true,
-    price: { currency: "INR", units: 3100, sub_units: 0, display_string: "₹ 3,100" },
-    strike_price: { currency: "INR", units: 0, sub_units: 0, display_string: "₹ 0" },
-  },
-  {
-    id: "9",
-    group_id: "14",
-    name: "Full Kundli Analysis",
-    description: "Complete kundli analysis session",
-    appointment_type: 1,
-    duration_in_sec: 3600,
-    is_active: true,
-    price: { currency: "INR", units: 5100, sub_units: 0, display_string: "₹ 5,100" },
-    strike_price: { currency: "INR", units: 0, sub_units: 0, display_string: "₹ 0" },
-  },
-  {
-    id: "10",
-    group_id: "14",
-    name: "Vaastu Consultation",
-    description: "Vastu consultation for offices, residences, plots and houses",
-    appointment_type: 1,
-    duration_in_sec: 3600,
-    is_active: true,
-    price: { currency: "INR", units: 5100, sub_units: 0, display_string: "₹ 5,100" },
-    strike_price: { currency: "INR", units: 0, sub_units: 0, display_string: "₹ 0" },
-  },
-];
+export interface Testimonial {
+  id: string;
+  group_id: string;
+  author: { uid: string; name: string; image: string };
+  title: string;
+  description: string;
+  star_rating: number;
+  status: string;
+}
 
-export const getServiceUrl = (productId: string) =>
-  `https://app.setav.ai/#/g/14/services/details/${productId}`;
+const API_BASE = "https://api.setav.in";
+const GROUP_ID = "14";
+
+export const fetchProducts = async (): Promise<Product[]> => {
+  const res = await fetch(`${API_BASE}/user/appointment/product/group/${GROUP_ID}`);
+  const data = await res.json();
+  return (data.products || []).filter((p: Product) => p.is_active);
+};
+
+export const fetchTestimonials = async (): Promise<Testimonial[]> => {
+  const res = await fetch(`${API_BASE}/user/testimonial/group/${GROUP_ID}/starred`);
+  const data = await res.json();
+  return data.testimonials || [];
+};
+
+export const getServiceUrl = (groupId: string, productId: string) =>
+  `https://setav.ai/g/${groupId}/services/details/${productId}`;
 
 export const formatDuration = (seconds: number): string => {
   const minutes = Math.floor(seconds / 60);
