@@ -55,3 +55,4 @@ Change deploy to generate og:image from Hero section
 # Notes
 - Create / use placeholder favicon for the website.
 - Crate banner image placeholder to be generated later.
+- Take youtube video links if youtube links are present in info.json and embed them in the website.
