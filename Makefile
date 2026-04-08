@@ -1,6 +1,6 @@
 # Makefile
 
-.PHONY: run_local build start_local_server swag_gen deploy
+.PHONY: run_local build start_local_server swag_gen deploy preview og-image
 
 run_local:
 	npm start
@@ -16,10 +16,8 @@ swag_gen:
 	npx swagger-typescript-api -p doc.json -o ./src/swag/
 	mv doc.json ./src/swag/doc.json
 
-deploy:
-	npm run build
-	firebase deploy --only hosting
+preview:
+	npm run preview
 
-firebase_login:
-	firebase login --reauth
-
+og-image:
+	node scripts/capture-og-image.mjs
