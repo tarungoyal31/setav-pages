@@ -1,15 +1,23 @@
-# Service provider website
+# {Website type: Service provider website}
 This is a website for a service provider. Service provider details are added in ServiceProvider.md
 
 ## Resources
+
+### Info
 - **info.json** - This file contains basic information about the service provider such as name, phone number, email, and address.
   - name: Brand under which service is provided
   - full_name: Name of the service provider (Individual or Company)
   - phone: Contact phone number
   - email: Contact email address
   - Other social media details are provided which will be displayed in the footer.
-- **appointment_products.json** - This file contains details about the services offered and their pricing.
-  - Note: Appointment product tap should take user to url: app.setav.ai/#/g/:gid/services/details/:pid. Where gid is the group id and pid is the product id.
+
+### Appointment products
+- Always get appointment details from get api: https://api.setav.in/user/appointment/product/group/:gid
+  - Note: Appointment product tap should take user to url: https://setav.ai/g/:gid/services/details/:pid. Where gid is the group id and pid is the product id.
+
+### Appointment products
+- Always get testimonial details from get api: https://api.setav.in/user/testimonial/group/:gid/starred
+
 - **Service.md** - This file contains detailed information about the service provider, including background, expertise, and approach.
 
 ## Actions
@@ -17,9 +25,9 @@ This is a website for a service provider. Service provider details are added in 
 - **Call Now** - This action will initiate a phone call to the service provider's phone number.
 - **Send Email** - This action will open the user's default email client to send an email.
 - **Download vCard** - This action will download the service provider's contact information as a vCard file.
-- **Login to setav** - This action will take the user to the setav login page.
+- **Login to setav** - This action will take the user to the setav login page (https://setav.ai).
 - **Download setav App** - This action will take the user to the setav app download page.
-  
+
 ## Section
 - Hero
   - Title: Tagline for service provider
@@ -40,3 +48,11 @@ This is a website for a service provider. Service provider details are added in 
   - Download setav app
     - App store (https://apps.apple.com/in/app/setav/id6738992536)
     - Play store (https://play.google.com/store/apps/details?id=ai.setav.customer)
+
+Change deploy to generate og:image from Hero section
+
+
+# Notes
+- Create / use placeholder favicon for the website.
+- Crate banner image placeholder to be generated later.
+- Take youtube video links if youtube links are present in info.json and embed them in the website.
