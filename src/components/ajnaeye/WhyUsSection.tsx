@@ -77,6 +77,7 @@ export default function WhyUsSection() {
                             </Box>
                             <Typography
                                 variant="h6"
+                                component="h3"
                                 sx={{
                                     fontWeight: 600,
                                     color: M3Colors.onSurface,

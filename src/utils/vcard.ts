@@ -6,7 +6,6 @@ interface VCardData {
     title: string;
     phone: string;
     email: string;
-    website: string;
     instagram: string;
     note: string;
 }
@@ -25,7 +24,6 @@ export function generateVCard(data: VCardData): string {
         `TITLE:${data.title}`,
         `TEL;TYPE=CELL:${data.phone}`,
         `EMAIL:${data.email}`,
-        `URL:${data.website}`,
         `X-SOCIALPROFILE;TYPE=instagram:${data.instagram}`,
         `NOTE:${data.note}`,
         "END:VCARD",

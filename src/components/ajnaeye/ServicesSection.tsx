@@ -78,6 +78,7 @@ export default function ServicesSection() {
                             </Box>
                             <Typography
                                 variant="h6"
+                                component="h3"
                                 sx={{
                                     fontWeight: 600,
                                     color: M3Colors.onSurface,

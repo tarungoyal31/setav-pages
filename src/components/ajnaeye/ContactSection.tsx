@@ -104,45 +104,6 @@ export default function ContactSection() {
                     </Box>
 
                     <Box
-                        sx={{
-                            display: "flex",
-                            alignItems: "center",
-                            gap: 2,
-                            mb: 2.5,
-                            p: 2,
-                            borderRadius: 2,
-                            bgcolor: M3Colors.surfaceHigh,
-                        }}
-                    >
-                        <Icon sx={{ color: M3Colors.primary, fontSize: 28 }}>language</Icon>
-                        <Box>
-                            <Typography
-                                variant="body2"
-                                sx={{ color: M3Colors.onSurfaceVariant }}
-                            >
-                                Website
-                            </Typography>
-                            <Typography
-                                component="a"
-                                href={URLS.website}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                sx={{
-                                    color: M3Colors.onSurface,
-                                    fontWeight: 600,
-                                    fontSize: "1.1rem",
-                                    textDecoration: "none",
-                                    "&:hover": {
-                                        color: M3Colors.primary,
-                                    },
-                                }}
-                            >
-                                www.ajnaeye.com
-                            </Typography>
-                        </Box>
-                    </Box>
-
-                    <Box
                         component="a"
                         href={URLS.instagram}
                         target="_blank"

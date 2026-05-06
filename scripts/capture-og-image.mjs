@@ -21,8 +21,8 @@ async function main() {
 
     await page.goto("http://localhost:5173", { waitUntil: "networkidle0", timeout: 15000 });
 
-    // Wait for hero image to load
-    await page.waitForSelector('img[alt*="Nutritionist"]', { timeout: 10000 }).catch(() => {});
+    // Wait for hero h1 to render
+    await page.waitForSelector("h1", { timeout: 10000 }).catch(() => {});
     // Extra time for fonts and rendering
     await new Promise((r) => setTimeout(r, 2000));
 

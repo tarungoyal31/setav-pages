@@ -20,6 +20,7 @@ export default function HeroSection() {
                 <Box sx={{ textAlign: "center" }}>
                     <Typography
                         variant="h6"
+                        component="p"
                         sx={{
                             color: M3Colors.primary,
                             fontWeight: 600,
@@ -44,6 +45,7 @@ export default function HeroSection() {
                     </Typography>
                     <Typography
                         variant="h6"
+                        component="p"
                         sx={{
                             color: M3Colors.onSurfaceVariant,
                             mb: 5,

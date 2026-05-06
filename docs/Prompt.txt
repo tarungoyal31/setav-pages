@@ -1,4 +1,4 @@
-Generate a website for $brand$, This is a website for nutritionist $name$. Use @docs/Base.md
+Generate a website for $brand$, This is a website for $name$. Use @docs/Base.md
   for information on how to create the website. @docs/info.json
 
   About: $about$

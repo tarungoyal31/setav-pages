@@ -9,7 +9,7 @@ import { downloadVCard } from "../../utils/vcard";
 
 export default function Footer() {
     const handleSaveContact = () => {
-        downloadVCard(VCARD_DATA, "shreya-suman-ajnaeye");
+        downloadVCard(VCARD_DATA, "shreiyaa-summan-ajnaeye");
     };
 
     return (
