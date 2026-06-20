@@ -1,0 +1,126 @@
+{
+  "siteId": "site-sanjayp-001",
+  "subdomain": "sanjayprasad",
+  "groupId": "14",
+  "status": "published",
+  "identity": {
+    "name": "Sanjay Prasad",
+    "profession": "Astrologer",
+    "intro": "Astrology, Numerology, Vaastu Consultation",
+    "logo": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-1733041092-1000059295.jpg"
+  },
+  "theme": {
+    "seedColor": "#E65100",
+    "variant": "bold"
+  },
+  "sections": [
+    { "type": "hero",         "enabled": true,  "order": 1 },
+    { "type": "about",        "enabled": true,  "order": 2 },
+    { "type": "gallery",      "enabled": true,  "order": 3 },
+    { "type": "whyUs",        "enabled": true,  "order": 4 },
+    { "type": "services",     "enabled": true,  "order": 5, "source": "group" },
+    { "type": "testimonials", "enabled": true,  "order": 6, "source": "group" },
+    { "type": "youtube",      "enabled": true,  "order": 7 },
+    { "type": "contact",      "enabled": true,  "order": 8 },
+    { "type": "footer",       "enabled": true,  "order": 9 }
+  ],
+  "contact": {
+    "phone": "+919810895239",
+    "email": "sanjayprasadsp2314@gmail.com",
+    "address": "3rd Floor, C-5, above KFC, Block E, Malviya Nagar, New Delhi, Delhi 110017, India",
+    "showContactInformation": true
+  },
+  "links": {
+    "booking": "https://setav.ai/g/14",
+    "social": [
+      { "type": "instagram", "url": "https://www.instagram.com/turning.point.888.astrology" },
+      { "type": "youtube",   "url": "https://www.youtube.com/@turningpoint888astrology" }
+    ]
+  },
+  "integrations": {
+    "metaPixelId": "",
+    "ga4Id": "",
+    "consentRequired": false
+  },
+  "legal": {
+    "approved": false,
+    "version": 0
+  },
+  "seo": {
+    "title": "Sanjay Prasad — Astrologer in New Delhi",
+    "description": "Vedic astrology, numerology & Vaastu consultations in New Delhi. Simple, cost-free remedies from an experienced astrologer. Book your appointment today.",
+    "canonical": "https://sanjayprasad.setav.app/",
+    "ogImage": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-1733041092-1000059295.jpg",
+    "jsonldEnabled": true
+  },
+  "generatedAt": 1750000000,
+
+  "about": {
+    "heading": "About Sanjay Prasad",
+    "bio": "I am retired from private service with a background in Economics, and my journey into astrology was inspired by my late mother. In recent years, I have devoted myself to guiding people through astrology via my YouTube and Instagram platforms.\n\nI offer simple, cost-free remedies, believing that service to those in distress is a blessing. The trust and relief people experience bring me deep joy and gratitude to the Almighty. For me, true fulfillment lies in easing suffering and spreading positivity, and this is the path I continue to follow.",
+    "highlights": [
+      { "label": "Years Experience",       "value": "25+" },
+      { "label": "Professional Experience","value": "35 Yrs" },
+      { "label": "Graduate",               "value": "Economics" }
+    ]
+  },
+
+  "gallery": {
+    "heading": "Gallery",
+    "images": [
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733226886-1000073537.jpg",  "alt": "Sanjay Prasad at consultation" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042429-1000059296.jpg",  "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042467-2865f831-506e-451f-a7c9-28c820b23835-1_all_14342.jpg", "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042537-2865f831-506e-451f-a7c9-28c820b23835-1_all_14314.jpg", "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042612-2865f831-506e-451f-a7c9-28c820b23835-1_all_13528.jpg", "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042634-2865f831-506e-451f-a7c9-28c820b23835-1_all_14264.jpg", "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733042705-2865f831-506e-451f-a7c9-28c820b23835-1_all_12082.jpg", "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120165-1000073436.jpg",  "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120187-1000073437.jpg",  "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120201-1000073435.jpg",  "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120212-1000073434.jpg",  "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120225-1000073433.jpg",  "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120265-1000073432.jpg",  "alt": "Sanjay Prasad" },
+      { "url": "https://setav-prod-contacts.s3.ap-south-1.amazonaws.com/7-default-1733120573-1000073438.jpg",  "alt": "Sanjay Prasad" }
+    ]
+  },
+
+  "whyUs": {
+    "heading": "Why Choose Us",
+    "subheading": "Experience authentic Vedic astrology with a compassionate approach",
+    "reasons": [
+      {
+        "icon": "AutoAwesome",
+        "title": "25+ Years of Expertise",
+        "description": "Deep knowledge and experience in Vedic astrology, numerology, and Vaastu Shastra."
+      },
+      {
+        "icon": "VolunteerActivism",
+        "title": "Simple, Cost-Free Remedies",
+        "description": "Practical solutions that don't burden you financially. Effective remedies without expensive rituals."
+      },
+      {
+        "icon": "Person",
+        "title": "Personalized Consultations",
+        "description": "Each session is tailored to your specific concerns and life situation."
+      },
+      {
+        "icon": "MenuBook",
+        "title": "Vedic Astrology & Vaastu",
+        "description": "Comprehensive services covering astrology, kundli analysis, numerology, and Vaastu consultation."
+      },
+      {
+        "icon": "Favorite",
+        "title": "Client-Focused Approach",
+        "description": "Dedicated to helping people in distress with genuine care and compassion."
+      }
+    ]
+  },
+
+  "youtube": {
+    "heading": "Videos",
+    "subheading": "Watch our latest videos on astrology and guidance",
+    "channelUrl": "https://www.youtube.com/@turningpoint888astrology",
+    "videoIds": ["e6ArjyMsUD8", "PYfMVeS7IeA", "ORIjjhiNSeA"]
+  }
+}
