@@ -39,12 +39,14 @@
   },
   "integrations": {
     "metaPixelId": "",
-    "ga4Id": "",
-    "consentRequired": false
+    "ga4Id": "G-FIXTURE0001",
+    "consentRequired": true
   },
   "legal": {
-    "approved": false,
-    "version": 0
+    "approved": true,
+    "version": 1,
+    "termsKey": "sites/site-sanjayp-001/legal/terms.md",
+    "privacyKey": "sites/site-sanjayp-001/legal/privacy.md"
   },
   "seo": {
     "title": "Sanjay Prasad — Astrologer in New Delhi",
