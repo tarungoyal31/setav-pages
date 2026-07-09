@@ -27,4 +27,11 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- gurupoojaastrovastu.setav.app -->
+  <url>
+    <loc>https://gurupoojaastrovastu.setav.app/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>
